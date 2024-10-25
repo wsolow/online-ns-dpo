@@ -1,0 +1,54 @@
+seed_start: 2021
+num_seeds: 10
+num_data: 20
+freq_report: 5
+logdir: logs/
+wandb:
+  use: false
+  key: YOUR_KEY
+  entity: YOUR_ENTITY
+  project: project0
+  group: group0
+env_bandit: OfflineBandit
+state_dim: 4
+action_num: 16
+reset_state_dist: uniform
+feature_type: normal
+reward_v1: 0.018215
+reward_v2: 0.11031
+tv:
+  use: true
+  type: faury
+  v1_target: 0.11031
+  v2_target: 0.018215
+  bt: 1.57
+odata:
+  use: true
+  name_dataset: sigmoid_time100_train20_valid100
+  num_steps: 100
+  train_per_step: 20
+  valid_per_step: 100
+  size_batch: 100
+  drift_coef: 1.0
+  sample_prefs: true
+algo: dpo
+max_param_norm: 1.0
+max_feature_norm: 4.0
+step_size: 0.1
+num_iters: 1000
+freq_eval: 5
+reg_coef: 1.0
+l2_coef: 0.01
+is_adaptive: true
+ada_coef: 0.1
+delta: 0.1
+cs: 1.0
+ks: 1.0
+gamma: 0.5
+gamma2: None
+use_sw: false
+window_size: 50
+action_selection: random
+filter_actions: false
+cov_init_coef: 1.0
+bonus_coef: 1.0
