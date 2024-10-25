@@ -6,3 +6,4 @@ Please navigate to the corresponding directory for each type of experiment.
 - `LLM/`: contains code for running LLM experiments (mainly with `llama-2-7b-chat-hf`)
 - `synthetic/`: contains code for running synthetic experiments
 
+# Tetsting merge
