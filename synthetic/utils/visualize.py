@@ -130,13 +130,9 @@ def draw_results_from_df(
     crg = ColorRevolver(colorset="G")
     crb = ColorRevolver(colorset="B")
     crr = ColorRevolver(colorset="R")
-    # crr = ColorRevolver(reverse=True)
-    # for k in df_avg.config_name.value_counts().keys():
     for k in names:
-        # print(k)
         if "nsdpo" in k:
             color = crb.get_color()
-            # print(k)
         elif "sw_dpo" in k:
             color = crg.get_color()
         elif "vanilla_dpo" in k:

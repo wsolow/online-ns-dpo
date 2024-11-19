@@ -1,7 +1,6 @@
 import numpy as np
 import wandb
 import pandas as pd
-import sys
 
 from omegaconf import OmegaConf
 from envs.reward import (
@@ -82,7 +81,6 @@ def run_linear_bandit(seed, args, config_name, config, log_dir):
     print(f"Logging to {log_dir}")
     print("Seed:" + str(seed))
     
-    mode = "loglinear"
     if config.wandb.use:
         print("USING WANDB")
         wandb.login(
@@ -134,8 +132,6 @@ def run_linear_bandit(seed, args, config_name, config, log_dir):
 
     # Generate datasets
     pref_data = init_pref_data(config, env)
-    # Append 0 to end
-    pref_data = np.concatenate((pref_data,[[0]]),axis=1)
 
     # inv_cov = init_cov_matrix(config, feature_dim)
     cov = init_cov_matrix_tv(config, feature_dim)
@@ -148,9 +144,8 @@ def run_linear_bandit(seed, args, config_name, config, log_dir):
     total_opt = 0.
     total_pref = 0.
     total_npref = 0.
-
-    for t in range(config.num_steps):
-        opt_param = opt_params[t]
+    for idx_data in range(config.num_steps-1):
+        opt_param = opt_params[idx_data]
 
         # Create the optimal agent at this time step        
         opt_agent= POAgent(
@@ -160,122 +155,119 @@ def run_linear_bandit(seed, args, config_name, config, log_dir):
             param=opt_param,
             ref_agent=ref_agent,
         )
-        
-        for i in range(config.odata.train_per_step):
-            
-            # calculate parameter
-            agent = POAgent(
-                config,
-                feature_dim,
-                feature_func,
-                param=None,
-                ref_agent=ref_agent,
-            )
 
-            agent.train(
-                train_data=pref_data,
-                true_param=opt_param
-            )
+        # calculate parameter
+        agent = POAgent(
+            config,
+            feature_dim,
+            feature_func,
+            param=None,
+            ref_agent=ref_agent,
+        )
 
-            # sample a state
-            new_state = env.reset()
+        agent.train(
+            train_data=pref_data,
+            true_param=opt_param
+        )
 
-            # choose action pairs
-            inv_cov = np.linalg.inv(cov)
-            new_action_pair = select_action_pair(
-                config,
-                new_state,
-                agent,
-                inv_cov,
-                config.action_selection
-            )
+        # sample a state
+        new_state = env.reset()
 
-            # get preference feedback
-            # CURRENTLY FROM THE
-            preference = get_preference(
-                config,
-                feature_func,
-                agent,
-                new_state,
-                new_action_pair,
-            )
+        # choose action pairs
+        inv_cov = np.linalg.inv(cov)
+        new_action_pair = select_action_pair(
+            config,
+            new_state,
+            agent,
+            inv_cov,
+            config.action_selection
+        )
 
-            new_action_pair = apply_preference(
-                preference,
-                new_action_pair
-            )
+        # get preference feedback
+        preference = get_preference(
+            config,
+            feature_func,
+            opt_agent,
+            new_state,
+            new_action_pair,
+            mode="linear"
+        )
+        new_action_pair = apply_preference(
+            preference,
+            new_action_pair
+        )
 
-            # calculate regret
-            regret_avg, regret_pref, rewards = calc_pseudo_regret(
-                config,
-                opt_agent,
-                pref_data[-1:],
-            )
+        # calculate regret
+        regret_avg, regret_pref, rewards = calc_pseudo_regret(
+            config,
+            opt_agent,
+            pref_data[-1:],
+            mode="linear"
+        )
 
-            # update training data, covariance matrix
-            pref_data = np.concatenate(
-                [
-                    pref_data,
-                    np.concatenate(
-                        [
-                            new_state,
-                            new_action_pair,
-                            [[t]]
-                        ],
-                        axis=1
-                    )
-                ],
-                axis=0
-            )
-            cov = update_cov_tv(
-                config,
-                feature_func,
-                cov,
-                new_state,
-                new_action_pair,
-                config.gamma
-            )
-
-            # print intermediate results, report to wandb
-            size_data = len(pref_data)
-            if (size_data % config.freq_report == 0) or (size_data == config.num_steps):
-
-                total_regret_avg += regret_avg
-                total_regret_pref += regret_pref
-                total_opt += rewards["optimal"].sum()
-                total_pref += rewards["pref"].sum()
-                total_npref += rewards["npref"].sum()
-
-                # pandas
-                evals.append(
+        # update training data, covariance matrix
+        pref_data = np.concatenate(
+            [
+                pref_data,
+                np.concatenate(
                     [
-                        config_name, 
-                        seed, 
-                        size_data, 
-                        total_regret_avg,
-                        total_regret_pref, 
-                        total_opt, 
-                        total_pref, 
-                        total_npref
-                    ]
+                        new_state,
+                        new_action_pair
+                    ],
+                    axis=1
                 )
+            ],
+            axis=0
+        )
+        cov = update_cov_tv(
+            config,
+            feature_func,
+            cov,
+            new_state,
+            new_action_pair,
+            config.gamma
+        )
 
-                # print
-                s_evals = f"[{size_data:>8d} points] regret_avg: {total_regret_avg:.4f} | regret_pref: {total_regret_pref:.4f} | reward_optimal: {total_opt:.4f} | reward_pref: {total_pref:.4f} | reward_npref: {total_npref:.4f}"
-                print(s_evals)
-                with open(path_evals, "a") as fp_evals:
-                    fp_evals.write(s_evals + "\n")
+        # print intermediate results, report to wandb
+        size_data = len(pref_data)
+        if (size_data % config.freq_report == 0) or (size_data == config.num_steps):
 
-                # wandb
-                if config.wandb.use:
-                    d_wandb = {
-                        "evals/regret_avg": total_regret_avg,
-                        "evals/regret_pref": total_regret_pref,
-                        "evals/reward_opt": total_opt,
-                        "evals/reward_pref": total_pref,
-                        "evals/reward_npref": total_npref,
-                    }
-                    wandb.log(d_wandb, step=size_data)
+            total_regret_avg += regret_avg
+            total_regret_pref += regret_pref
+            total_opt += rewards["optimal"].sum()
+            total_pref += rewards["pref"].sum()
+            total_npref += rewards["npref"].sum()
+
+            # pandas
+            evals.append(
+                [
+                    config_name, 
+                    seed, 
+                    size_data, 
+                    total_regret_avg,
+                    total_regret_pref, 
+                    total_opt, 
+                    total_pref, 
+                    total_npref
+                ]
+            )
+
+            # print
+            s_evals = f"[{size_data:>8d} points] regret_avg: {total_regret_avg:.4f} | regret_pref: {total_regret_pref:.4f} | reward_optimal: {total_opt:.4f} | reward_pref: {total_pref:.4f} | reward_npref: {total_npref:.4f}"
+            print(s_evals)
+            with open(path_evals, "a") as fp_evals:
+                fp_evals.write(s_evals + "\n")
+
+            # wandb
+            if config.wandb.use:
+                d_wandb = {
+                    "evals/regret_avg": total_regret_avg,
+                    "evals/regret_pref": total_regret_pref,
+                    "evals/reward_opt": total_opt,
+                    "evals/reward_pref": total_pref,
+                    "evals/reward_npref": total_npref,
+                }
+                wandb.log(d_wandb, step=size_data)
 
     eval_df = pd.DataFrame(
         evals,

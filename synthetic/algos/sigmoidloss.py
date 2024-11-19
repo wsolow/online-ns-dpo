@@ -23,7 +23,6 @@ class SigmoidLossOptimization(Agent):
 
         self.cs = config.cs
         self.ks = config.ks
-        self.gamma = config.gamma
         self.gammas = np.array([])
 
     def calc_reward(

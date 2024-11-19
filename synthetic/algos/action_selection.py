@@ -183,9 +183,6 @@ def filter_actions(
                 )
             )
             values = reward_diffs + config.bonus_coef * bonuses_cand
-            # print(f"reward_diffs: max {reward_diffs.max()} | min {reward_diffs.min()}")
-            # print(f"bonuses_cand: max {bonuses_cand.max()} | min {bonuses_cand.min()}")
-            # print(f"values: max {values.max()} | min {values.min()}")
             if (values > 0).all():
                 res_i.append(j)
         if len(res_i) < 2:
@@ -206,9 +203,7 @@ def ucb_find_pair(
     """
     Given a state and action pairs to consider, find the argmax pair of the UCB term.
     """
-    if config.env_bandit == "LogLinearBandit":
-        rew_func = agent.calc_log_ratio_diff
-    elif config.env_bandit == "LinearBandit":
+    if config.env_bandit == "LinearBandit":
         rew_func = agent.calc_rew_diff
     else:
         raise NotImplementedError

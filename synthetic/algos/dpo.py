@@ -1,4 +1,5 @@
 import numpy as np
+import sys
 
 from .agent import Agent
 from .action_selection import get_actions_features, calc_feat_diff
@@ -21,7 +22,6 @@ class DirectPreferenceOptimization(Agent):
             ref_agent
         )
 
-        self.gamma = config.gamma
         if type(config.gamma2) == float:
             self.gamma2 = config.gamma2
         else:
@@ -33,7 +33,7 @@ class DirectPreferenceOptimization(Agent):
         num_items=None,
     ):
         if dataset is not None:
-            exponents = (self.config.odata.num_steps - 1) - dataset[:, -1]
+            exponents = (self.config.num_steps - 1) - dataset[:, -1]
         elif num_items is not None:
             exponents = np.arange(num_items) + 1 - num_items
 
@@ -60,7 +60,7 @@ class DirectPreferenceOptimization(Agent):
         rewards = self.reg_coef * (features @ param_diff)
 
         return rewards
-
+    
     def get_rewards(
         self,
         action_num,
@@ -100,27 +100,29 @@ class DirectPreferenceOptimization(Agent):
         dataset: np.ndarray
     ) -> float:
 
-        if self.config.tv.use:
+        if self.config.tv_dpo:
             gammas = self.set_gammas(dataset=dataset)
             if self.config.use_sw:
                 coefs_sw = self.apply_window(dataset=dataset)
-            dataset = dataset[:, :-1]
-            
-            if self.gamma2 is not None:
+            elif self.gamma2 is not None:
                 gamma2s = self.set_gamma2s(dataset=dataset)
-
+            dataset = dataset[:, :-1]
         feat_diff, log_ratio_diff = self.calc_log_ratio_diff(dataset)
 
         coef = sigmoid(-log_ratio_diff)[:, None]
         neg_cur_data_grad = self.reg_coef * coef * feat_diff
-        if self.gamma2 is not None:
-            neg_cur_data_grad *= gamma2s
         
-        if self.config.tv.use:
+        if self.config.tv_dpo:
+            if self.config.use_sw:
+                pass
+            elif self.gamma2 is not None:
+                neg_cur_data_grad *= gamma2s
+        
+        if self.config.tv_dpo:
             grad = -(gammas * neg_cur_data_grad)
             if self.config.use_sw:
                 grad *= coefs_sw
-            if self.gamma2 is not None:
+            elif self.gamma2 is not None:
                 grad *= gamma2s
             grad = grad.mean(axis=0)
         else:
@@ -133,7 +135,6 @@ class DirectPreferenceOptimization(Agent):
         else:
             step_size = self.step_size
         self.param = self.param - step_size * grad
-
         return np.sqrt(np.sum(np.square(grad)))
     
     def evaluate_loss(
@@ -144,13 +145,13 @@ class DirectPreferenceOptimization(Agent):
         Evaluate the loss on the dataset for any policy.
         """
 
-        if self.config.tv.use:
+        if self.config.tv_dpo:
             gammas = self.set_gammas(dataset=dataset)
             dataset = dataset[:, :-1]
 
         feat_diff, log_ratio_diff = self.calc_log_ratio_diff(dataset)
 
-        if self.config.tv.use:
+        if self.config.tv_dpo:
             loss = -(gammas * np.log(sigmoid(log_ratio_diff))).mean()
         else:
             loss = -np.log(sigmoid(log_ratio_diff)).mean()

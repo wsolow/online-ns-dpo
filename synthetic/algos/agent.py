@@ -1,7 +1,7 @@
 import copy
 import numpy as np
 from utils.utils import sigmoid, softmax, IDX_PREF, IDX_NPREF
-from envs.reward import calc_expected_regret, calc_KL_divergence, calc_reward_accuracy
+from utils.utils import split_state_actions
 
 class Agent:
     def __init__(
@@ -27,6 +27,7 @@ class Agent:
         self.ada_coef = config.ada_coef
         self.hist_grad_squared_norm = 0.0
 
+        self.gamma = config.gamma
         self.ref_agent = ref_agent
         self.feature_dim = feature_dim
         self.feature_func = feature_func
@@ -125,10 +126,9 @@ class Agent:
         num_items=None,
     ):
         if dataset is not None:
-            exponents = (self.config.odata.num_steps - 1) - dataset[:, -1]
+            exponents = (self.config.num_steps - 1) - dataset[:, -1]
         elif num_items is not None:
             exponents = (num_items - 1) - np.arange(num_items)
-
         gammas = self.gamma ** exponents
 
         return gammas[:, None]
@@ -139,7 +139,7 @@ class Agent:
         num_items=None,
     ):
         if dataset is not None:
-            in_window = (self.config.odata.num_steps - dataset[:, -1]) <= self.config.window_size
+            in_window = (self.config.num_steps - dataset[:, -1]) <= self.config.window_size
         elif num_items is not None:
             in_window = (num_items - np.arange(num_items)) <= self.config.window_size
 
@@ -165,8 +165,8 @@ class Agent:
             "racc": list()
         }
 
-        valid_last_states = valid_data[-self.config.odata.valid_per_step:, :self.state_dim]
-        valid_last_actions = valid_data[-self.config.odata.valid_per_step:, self.state_dim:]
+        valid_last_states = valid_data[-self.config.valid_per_step:, :self.state_dim]
+        valid_last_actions = valid_data[-self.config.valid_per_step:, self.state_dim:]
 
         if self.config.algo == "sigmoidloss":
             mode_reward = "linear"
@@ -175,7 +175,7 @@ class Agent:
 
         for step in range(self.num_iters):
             # select batch from the training data
-            indices_batch = np.random.choice(indices_train, self.config.odata.size_batch)
+            indices_batch = np.random.choice(indices_train, self.config.size_batch)
             train_batch = train_data[indices_batch]
             grad_norm = self.update_step(train_batch)
 
@@ -205,7 +205,7 @@ class Agent:
                 racc = calc_reward_accuracy(
                     self.config,
                     self,
-                    valid_data[-self.config.odata.valid_per_step:],
+                    valid_data[-self.config.valid_per_step:],
                     mode=mode_reward
                 )
 
@@ -252,6 +252,115 @@ class Agent:
         states: np.ndarray
     ):
         pass
+
+
+def calc_KL_divergence(
+    config,
+    opt_agent,
+    agent,
+    pref_data,
+    state_only=False,
+):
+    rewards = dict()
+    if state_only:
+        states = pref_data
+    else:
+        states, actions = split_state_actions(config.state_dim, pref_data)
+
+    opt_policy = opt_agent.ret_policy()
+    policy = agent.ret_policy()
+
+    probs_opt = opt_policy(states)
+    probs = policy(states)
+
+    term1 = (probs * np.log(probs)).sum(axis=-1)
+    term2 = (probs * np.log(probs_opt)).sum(axis=-1)
+    KL_divs = config.reg_coef * (
+        term1 - term2
+    )
+    
+    if state_only:
+        res = KL_divs.mean()
+    else:
+        res = KL_divs.sum()
+
+    return res
+
+def calc_expected_regret(
+    config,
+    agent,
+    opt_agent,
+    states,
+    mode="linear"
+):
+    rewards = dict()
+    opt_policy = opt_agent.ret_policy()
+    agent_policy = agent.ret_policy()
+
+    if mode == "loglinear":
+        opt_probs = opt_policy(states)
+        opt_rewards = opt_agent.get_rewards(
+            opt_agent.action_num,
+            opt_agent.feature_func,
+            states
+        )
+        rewards["optimal"] = (opt_probs * opt_rewards).sum(axis=-1)
+
+        agent_probs = agent_policy(states)
+        rewards["agent"] = (agent_probs * opt_rewards).sum(axis=-1)
+        
+    elif mode == "linear":
+        func_rew = opt_agent.calc_reward
+        opt_actions = np.argmax(opt_policy(states), axis=1)
+        rewards["optimal"] = func_rew(
+            states,
+            opt_actions
+        )
+
+        agent_actions = np.argmax(agent_policy(states), axis=1)
+        rewards["agent"] = func_rew(
+            states,
+            agent_actions
+        )
+    else:
+        raise NotImplementedError
+
+    expected_regret = rewards["optimal"].mean() - rewards["agent"].mean()
+    
+    return expected_regret
+
+def calc_reward_accuracy(
+    config,
+    agent,
+    data,
+    mode="linear"
+):
+    if mode == "loglinear":
+        func_rew = agent.calc_implicit_reward
+    elif mode == "linear":
+        func_rew = agent.calc_reward
+    else:
+        raise NotImplementedError
+
+    rewards = dict()
+    states, actions = split_state_actions(config.state_dim, data)
+    policy = agent.ret_policy()
+
+    rewards["pref"] = func_rew(
+        states,
+        actions[:, IDX_PREF]
+    )
+    rewards["npref"] = func_rew(
+        states,
+        actions[:, IDX_NPREF]
+    )
+
+    rdiff = rewards["pref"] - rewards["npref"]
+    racc = (rdiff > 0).mean()
+    
+    return racc
+
+
 
 
         

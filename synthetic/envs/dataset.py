@@ -6,8 +6,7 @@ import os
 
 from envs.reward import (
     set_reward_params_tv, 
-    calc_pseudo_regret, 
-    calc_KL_divergence
+    calc_pseudo_regret
 )
 from envs.preference import get_preference, apply_preference
 
@@ -33,7 +32,7 @@ def create_offline_data(
 ):
 
     # check the existence of the dataset
-    path_dataset = f"./datasets/{config.odata.name_dataset}.pkl"
+    path_dataset = f"./datasets/{config.name_dataset}.pkl"
     if os.path.exists(path_dataset):
         print(f"Dataset loaded: {path_dataset}")
         with open(path_dataset, 'rb') as fp:
@@ -63,7 +62,7 @@ def create_offline_data(
         
         opt_agents = list()
         if config.algo == "sigmoidloss":
-            mode_reward = "linear"
+            mode_reward = "loglinear"
         elif config.algo == "dpo":
             mode_reward = "loglinear"
 
@@ -79,13 +78,13 @@ def create_offline_data(
             valid_optactions = list()
             valid_rewdiffs = list()
 
-            for i in range(config.odata.num_steps):
+            for i in range(config.num_steps):
                 opt_param = rparams[i]
                 
                 # sample states
                 states_i = list()
 
-                num_data = config.odata.train_per_step + config.odata.valid_per_step
+                num_data = config.train_per_step + config.valid_per_step
                 for j in range(num_data):
                     states_i.append(env.reset())
 
@@ -100,8 +99,6 @@ def create_offline_data(
                     method="random"
                 )
 
-                # apply preference
-                # opt_agent= SigmoidLossOptimization(
                 opt_agent= POAgent(
                     config,
                     feature_dim,
@@ -131,22 +128,19 @@ def create_offline_data(
                     _, rewdiffs_i = opt_agent.calc_log_ratio_diff(dataset_i)
                 elif config.algo == "sigmoidloss":
                     _, rewdiffs_i = opt_agent.calc_rew_diff(dataset_i)
-                    # print(rewdiffs_i.shape)
 
-                # print(f"states_i: {states_i.shape} | actions_i: {actions_i.shape}")
-
-                train_states.append(states_i[:config.odata.train_per_step, :])
-                train_actions.append(actions_i[:config.odata.train_per_step, :])
-                train_tsteps.append(np.ones((config.odata.train_per_step, 1)) * i)
-                train_optactions.append(optactions_i[:config.odata.train_per_step])
-                valid_states.append(states_i[config.odata.train_per_step:, :])
-                valid_actions.append(actions_i[config.odata.train_per_step:, :])
-                valid_tsteps.append(np.ones((config.odata.valid_per_step, 1)) * i)
-                valid_optactions.append(optactions_i[config.odata.train_per_step:])
+                train_states.append(states_i[:config.train_per_step, :])
+                train_actions.append(actions_i[:config.train_per_step, :])
+                train_tsteps.append(np.ones((config.train_per_step, 1)) * i)
+                train_optactions.append(optactions_i[:config.train_per_step])
+                valid_states.append(states_i[config.train_per_step:, :])
+                valid_actions.append(actions_i[config.train_per_step:, :])
+                valid_tsteps.append(np.ones((config.valid_per_step, 1)) * i)
+                valid_optactions.append(optactions_i[config.train_per_step:])
                 opt_agents.append(opt_agent)
 
-                train_rewdiffs.append(rewdiffs_i[:config.odata.train_per_step])
-                valid_rewdiffs.append(rewdiffs_i[config.odata.train_per_step:])
+                train_rewdiffs.append(rewdiffs_i[:config.train_per_step])
+                valid_rewdiffs.append(rewdiffs_i[config.train_per_step:])
             
             train_states = np.concatenate(
                 train_states,
@@ -185,10 +179,10 @@ def create_offline_data(
             valid_rewdiffs = np.concatenate(valid_rewdiffs, axis=0)
 
         else: # stationary setting
-            num_data = config.odata.num_steps * (
-                config.odata.train_per_step + config.odata.valid_per_step
+            num_data = config.num_steps * (
+                config.train_per_step + config.valid_per_step
             )
-            num_train = config.odata.num_steps * config.odata.train_per_step
+            num_train = config.num_steps * config.train_per_step
             opt_param = rparams[0]
 
             # sample states

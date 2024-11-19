@@ -8,10 +8,8 @@ from envs.dataset import create_offline_data, report_rewdiffs
 from envs.linear_bandit import LinearBanditEnv
 from envs.reward import (
     set_reward_params_tv, 
-    calc_pseudo_regret, 
-    calc_KL_divergence
+    calc_pseudo_regret
 )
-from envs.preference import get_preference, apply_preference
 
 from algos.sigmoidloss import SigmoidLossOptimization
 from algos.dpo import DirectPreferenceOptimization
@@ -123,7 +121,7 @@ def run_offline_bandit(seed, args, config_name, config, log_dir):
                 config_name, 
                 seed, 
                 train_data.shape[0],
-                config.odata.size_batch,
+                config.size_batch,
                 values["steps"][i],
                 values["train_loss"][i],
                 values["valid_loss"][i],

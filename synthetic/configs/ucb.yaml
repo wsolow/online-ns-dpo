@@ -1,0 +1,17 @@
+# experiment
+seed_start: 2021
+num_seeds: 1
+
+num_data: 50
+freq_report: 5
+logdir: logs/
+
+wandb:
+  use: false
+  key: YOUR_KEY
+  entity: YOUR_ENTITY
+  project: test1_ucb
+  group: ucb
+
+# action selection
+action_selection: ucb

@@ -5,7 +5,6 @@ import wandb
 import pandas as pd
 from omegaconf import OmegaConf
 
-from envs.loglinear_bandit import run_loglinear_bandit
 from envs.linear_bandit import run_linear_bandit
 from envs.offline_bandit import run_offline_bandit
 
@@ -81,9 +80,7 @@ def run_multiple_seeds(args, config_name, config):
     log_dirs = create_log_dirs(args, config_name, config)
     for seed in range(config.seed_start, config.seed_start + config.num_seeds):
         log_dir = log_dirs[seed]
-        if config.env_bandit == "LogLinearBandit":
-            run_loglinear_bandit(seed, args, config_name, config, log_dir)
-        elif config.env_bandit == "LinearBandit":
+        if config.env_bandit == "LinearBandit":
             run_linear_bandit(seed, args, config_name, config, log_dir)
         elif config.env_bandit == "OfflineBandit":
             run_offline_bandit(seed, args, config_name, config, log_dir)
@@ -143,6 +140,7 @@ if __name__ == "__main__":
     args = parse_args()
     configs, config_names = prepare_config(args)
 
+    np.set_printoptions(precision=3, suppress=True)
     for idx_config in range(len(configs)):
         config = configs[idx_config]
         config_name = config_names[idx_config]
