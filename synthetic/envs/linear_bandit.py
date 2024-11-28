@@ -161,7 +161,7 @@ def run_linear_bandit(seed, args, config_name, config, log_dir):
             ref_agent=ref_agent,
         )
         
-        for i in range(config.odata.train_per_step):
+        for i in range(config.train_per_step):
             
             # calculate parameter
             agent = POAgent(
@@ -189,6 +189,7 @@ def run_linear_bandit(seed, args, config_name, config, log_dir):
                 inv_cov,
                 config.action_selection
             )
+
 
             # get preference feedback
             # CURRENTLY FROM THE

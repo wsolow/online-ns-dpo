@@ -1,0 +1,480 @@
+Logging to logs/exp2_notv/swdpo_w33/2024-11-27-06-59-46/dpo_2021
+Seed:2021
+reset state dist uniform
+Dataset created and saved: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  2.1207, valid_loss:  2.0337, grad_norm :0.0000, param_norm: 1.5735, expected_regret: -0.1951 expected_RLHFobj: 1.1280, reward_accuracy: 0.5600
+Iteration:  99, train_loss:  2.1207, valid_loss:  2.0337, grad_norm :0.0000, param_norm: 1.5735, expected_regret: -0.1951 expected_RLHFobj: 1.1280, reward_accuracy: 0.5600
+Iteration:  199, train_loss:  2.1207, valid_loss:  2.0337, grad_norm :0.0000, param_norm: 1.5735, expected_regret: -0.1951 expected_RLHFobj: 1.1280, reward_accuracy: 0.5600
+Iteration:  299, train_loss:  2.1207, valid_loss:  2.0337, grad_norm :0.0000, param_norm: 1.5735, expected_regret: -0.1951 expected_RLHFobj: 1.1280, reward_accuracy: 0.5600
+Iteration:  399, train_loss:  2.1207, valid_loss:  2.0337, grad_norm :0.0000, param_norm: 1.5735, expected_regret: -0.1951 expected_RLHFobj: 1.1280, reward_accuracy: 0.5600
+Iteration:  499, train_loss:  2.1207, valid_loss:  2.0337, grad_norm :0.0000, param_norm: 1.5735, expected_regret: -0.1951 expected_RLHFobj: 1.1280, reward_accuracy: 0.5600
+Iteration:  599, train_loss:  2.1207, valid_loss:  2.0337, grad_norm :0.0000, param_norm: 1.5735, expected_regret: -0.1951 expected_RLHFobj: 1.1280, reward_accuracy: 0.5600
+Iteration:  699, train_loss:  2.1207, valid_loss:  2.0337, grad_norm :0.0000, param_norm: 1.5735, expected_regret: -0.1951 expected_RLHFobj: 1.1280, reward_accuracy: 0.5600
+Iteration:  799, train_loss:  2.1207, valid_loss:  2.0337, grad_norm :0.0000, param_norm: 1.5735, expected_regret: -0.1951 expected_RLHFobj: 1.1280, reward_accuracy: 0.5600
+Iteration:  899, train_loss:  2.1207, valid_loss:  2.0337, grad_norm :0.0000, param_norm: 1.5735, expected_regret: -0.1951 expected_RLHFobj: 1.1280, reward_accuracy: 0.5600
+Iteration:  999, train_loss:  2.1207, valid_loss:  2.0337, grad_norm :0.0000, param_norm: 1.5735, expected_regret: -0.1951 expected_RLHFobj: 1.1280, reward_accuracy: 0.5600
+Logging to logs/exp2_notv/swdpo_w33/2024-11-27-06-59-46/dpo_2022
+Seed:2022
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  2.2434, valid_loss:  2.0775, grad_norm :0.0000, param_norm: 2.1523, expected_regret: -0.2255 expected_RLHFobj: 1.3725, reward_accuracy: 0.5600
+Iteration:  99, train_loss:  2.2434, valid_loss:  2.0775, grad_norm :0.0000, param_norm: 2.1523, expected_regret: -0.2255 expected_RLHFobj: 1.3725, reward_accuracy: 0.5600
+Iteration:  199, train_loss:  2.2434, valid_loss:  2.0775, grad_norm :0.0000, param_norm: 2.1523, expected_regret: -0.2255 expected_RLHFobj: 1.3725, reward_accuracy: 0.5600
+Iteration:  299, train_loss:  2.2434, valid_loss:  2.0775, grad_norm :0.0000, param_norm: 2.1523, expected_regret: -0.2255 expected_RLHFobj: 1.3725, reward_accuracy: 0.5600
+Iteration:  399, train_loss:  2.2434, valid_loss:  2.0775, grad_norm :0.0000, param_norm: 2.1523, expected_regret: -0.2255 expected_RLHFobj: 1.3725, reward_accuracy: 0.5600
+Iteration:  499, train_loss:  2.2434, valid_loss:  2.0775, grad_norm :0.0000, param_norm: 2.1523, expected_regret: -0.2255 expected_RLHFobj: 1.3725, reward_accuracy: 0.5600
+Iteration:  599, train_loss:  2.2434, valid_loss:  2.0775, grad_norm :0.0000, param_norm: 2.1523, expected_regret: -0.2255 expected_RLHFobj: 1.3725, reward_accuracy: 0.5600
+Iteration:  699, train_loss:  2.2434, valid_loss:  2.0775, grad_norm :0.0000, param_norm: 2.1523, expected_regret: -0.2255 expected_RLHFobj: 1.3725, reward_accuracy: 0.5600
+Iteration:  799, train_loss:  2.2434, valid_loss:  2.0775, grad_norm :0.0000, param_norm: 2.1523, expected_regret: -0.2255 expected_RLHFobj: 1.3725, reward_accuracy: 0.5600
+Iteration:  899, train_loss:  2.2434, valid_loss:  2.0775, grad_norm :0.0000, param_norm: 2.1523, expected_regret: -0.2255 expected_RLHFobj: 1.3725, reward_accuracy: 0.5600
+Iteration:  999, train_loss:  2.2434, valid_loss:  2.0775, grad_norm :0.0000, param_norm: 2.1523, expected_regret: -0.2255 expected_RLHFobj: 1.3725, reward_accuracy: 0.5600
+Logging to logs/exp2_notv/swdpo_w33/2024-11-27-06-59-46/dpo_2023
+Seed:2023
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.6109, valid_loss:  1.5212, grad_norm :0.0000, param_norm: 1.3416, expected_regret: -0.1532 expected_RLHFobj: 0.9012, reward_accuracy: 0.5500
+Iteration:  99, train_loss:  1.6109, valid_loss:  1.5212, grad_norm :0.0000, param_norm: 1.3416, expected_regret: -0.1532 expected_RLHFobj: 0.9012, reward_accuracy: 0.5500
+Iteration:  199, train_loss:  1.6109, valid_loss:  1.5212, grad_norm :0.0000, param_norm: 1.3416, expected_regret: -0.1532 expected_RLHFobj: 0.9012, reward_accuracy: 0.5500
+Iteration:  299, train_loss:  1.6109, valid_loss:  1.5212, grad_norm :0.0000, param_norm: 1.3416, expected_regret: -0.1532 expected_RLHFobj: 0.9012, reward_accuracy: 0.5500
+Iteration:  399, train_loss:  1.6109, valid_loss:  1.5212, grad_norm :0.0000, param_norm: 1.3416, expected_regret: -0.1532 expected_RLHFobj: 0.9012, reward_accuracy: 0.5500
+Iteration:  499, train_loss:  1.6109, valid_loss:  1.5212, grad_norm :0.0000, param_norm: 1.3416, expected_regret: -0.1532 expected_RLHFobj: 0.9012, reward_accuracy: 0.5500
+Iteration:  599, train_loss:  1.6109, valid_loss:  1.5212, grad_norm :0.0000, param_norm: 1.3416, expected_regret: -0.1532 expected_RLHFobj: 0.9012, reward_accuracy: 0.5500
+Iteration:  699, train_loss:  1.6109, valid_loss:  1.5212, grad_norm :0.0000, param_norm: 1.3416, expected_regret: -0.1532 expected_RLHFobj: 0.9012, reward_accuracy: 0.5500
+Iteration:  799, train_loss:  1.6109, valid_loss:  1.5212, grad_norm :0.0000, param_norm: 1.3416, expected_regret: -0.1532 expected_RLHFobj: 0.9012, reward_accuracy: 0.5500
+Iteration:  899, train_loss:  1.6109, valid_loss:  1.5212, grad_norm :0.0000, param_norm: 1.3416, expected_regret: -0.1532 expected_RLHFobj: 0.9012, reward_accuracy: 0.5500
+Iteration:  999, train_loss:  1.6109, valid_loss:  1.5212, grad_norm :0.0000, param_norm: 1.3416, expected_regret: -0.1532 expected_RLHFobj: 0.9012, reward_accuracy: 0.5500
+Logging to logs/exp2_notv/swdpo_w33/2024-11-27-06-59-46/dpo_2024
+Seed:2024
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.7754, valid_loss:  1.6189, grad_norm :0.0000, param_norm: 1.4269, expected_regret: -0.1751 expected_RLHFobj: 1.0513, reward_accuracy: 0.5700
+Iteration:  99, train_loss:  1.7754, valid_loss:  1.6189, grad_norm :0.0000, param_norm: 1.4269, expected_regret: -0.1751 expected_RLHFobj: 1.0513, reward_accuracy: 0.5700
+Iteration:  199, train_loss:  1.7754, valid_loss:  1.6189, grad_norm :0.0000, param_norm: 1.4269, expected_regret: -0.1751 expected_RLHFobj: 1.0513, reward_accuracy: 0.5700
+Iteration:  299, train_loss:  1.7754, valid_loss:  1.6189, grad_norm :0.0000, param_norm: 1.4269, expected_regret: -0.1751 expected_RLHFobj: 1.0513, reward_accuracy: 0.5700
+Iteration:  399, train_loss:  1.7754, valid_loss:  1.6189, grad_norm :0.0000, param_norm: 1.4269, expected_regret: -0.1751 expected_RLHFobj: 1.0513, reward_accuracy: 0.5700
+Iteration:  499, train_loss:  1.7754, valid_loss:  1.6189, grad_norm :0.0000, param_norm: 1.4269, expected_regret: -0.1751 expected_RLHFobj: 1.0513, reward_accuracy: 0.5700
+Iteration:  599, train_loss:  1.7754, valid_loss:  1.6189, grad_norm :0.0000, param_norm: 1.4269, expected_regret: -0.1751 expected_RLHFobj: 1.0513, reward_accuracy: 0.5700
+Iteration:  699, train_loss:  1.7754, valid_loss:  1.6189, grad_norm :0.0000, param_norm: 1.4269, expected_regret: -0.1751 expected_RLHFobj: 1.0513, reward_accuracy: 0.5700
+Iteration:  799, train_loss:  1.7754, valid_loss:  1.6189, grad_norm :0.0000, param_norm: 1.4269, expected_regret: -0.1751 expected_RLHFobj: 1.0513, reward_accuracy: 0.5700
+Iteration:  899, train_loss:  1.7754, valid_loss:  1.6189, grad_norm :0.0000, param_norm: 1.4269, expected_regret: -0.1751 expected_RLHFobj: 1.0513, reward_accuracy: 0.5700
+Iteration:  999, train_loss:  1.7754, valid_loss:  1.6189, grad_norm :0.0000, param_norm: 1.4269, expected_regret: -0.1751 expected_RLHFobj: 1.0513, reward_accuracy: 0.5700
+Logging to logs/exp2_notv/swdpo_w33/2024-11-27-06-59-46/dpo_2025
+Seed:2025
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.6427, valid_loss:  1.5154, grad_norm :0.0000, param_norm: 1.8199, expected_regret: -0.2048 expected_RLHFobj: 1.1047, reward_accuracy: 0.5600
+Iteration:  99, train_loss:  1.6427, valid_loss:  1.5154, grad_norm :0.0000, param_norm: 1.8199, expected_regret: -0.2048 expected_RLHFobj: 1.1047, reward_accuracy: 0.5600
+Iteration:  199, train_loss:  1.6427, valid_loss:  1.5154, grad_norm :0.0000, param_norm: 1.8199, expected_regret: -0.2048 expected_RLHFobj: 1.1047, reward_accuracy: 0.5600
+Iteration:  299, train_loss:  1.6427, valid_loss:  1.5154, grad_norm :0.0000, param_norm: 1.8199, expected_regret: -0.2048 expected_RLHFobj: 1.1047, reward_accuracy: 0.5600
+Iteration:  399, train_loss:  1.6427, valid_loss:  1.5154, grad_norm :0.0000, param_norm: 1.8199, expected_regret: -0.2048 expected_RLHFobj: 1.1047, reward_accuracy: 0.5600
+Iteration:  499, train_loss:  1.6427, valid_loss:  1.5154, grad_norm :0.0000, param_norm: 1.8199, expected_regret: -0.2048 expected_RLHFobj: 1.1047, reward_accuracy: 0.5600
+Iteration:  599, train_loss:  1.6427, valid_loss:  1.5154, grad_norm :0.0000, param_norm: 1.8199, expected_regret: -0.2048 expected_RLHFobj: 1.1047, reward_accuracy: 0.5600
+Iteration:  699, train_loss:  1.6427, valid_loss:  1.5154, grad_norm :0.0000, param_norm: 1.8199, expected_regret: -0.2048 expected_RLHFobj: 1.1047, reward_accuracy: 0.5600
+Iteration:  799, train_loss:  1.6427, valid_loss:  1.5154, grad_norm :0.0000, param_norm: 1.8199, expected_regret: -0.2048 expected_RLHFobj: 1.1047, reward_accuracy: 0.5600
+Iteration:  899, train_loss:  1.6427, valid_loss:  1.5154, grad_norm :0.0000, param_norm: 1.8199, expected_regret: -0.2048 expected_RLHFobj: 1.1047, reward_accuracy: 0.5600
+Iteration:  999, train_loss:  1.6427, valid_loss:  1.5154, grad_norm :0.0000, param_norm: 1.8199, expected_regret: -0.2048 expected_RLHFobj: 1.1047, reward_accuracy: 0.5600
+Logging to logs/exp2_notv/dpo_g1.0/2024-11-27-07-00-13/dpo_2021
+Seed:2021
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.9233, valid_loss:  1.8704, grad_norm :1.5398, param_norm: 1.5617, expected_regret: -0.1632 expected_RLHFobj: 1.0679, reward_accuracy: 0.5700
+Iteration:  99, train_loss:  0.6918, valid_loss:  0.6921, grad_norm :0.5352, param_norm: 1.0177, expected_regret: -0.0167 expected_RLHFobj: 0.0298, reward_accuracy: 0.5500
+Iteration:  199, train_loss:  0.6914, valid_loss:  0.6932, grad_norm :0.3129, param_norm: 1.0016, expected_regret: -0.0118 expected_RLHFobj: 0.0313, reward_accuracy: 0.5700
+Iteration:  299, train_loss:  0.6912, valid_loss:  0.6897, grad_norm :0.5791, param_norm: 0.9904, expected_regret: -0.0129 expected_RLHFobj: 0.0199, reward_accuracy: 0.6200
+Iteration:  399, train_loss:  0.6905, valid_loss:  0.6897, grad_norm :0.2863, param_norm: 0.9800, expected_regret: -0.0141 expected_RLHFobj: 0.0194, reward_accuracy: 0.6000
+Iteration:  499, train_loss:  0.6902, valid_loss:  0.6908, grad_norm :0.5498, param_norm: 0.9692, expected_regret: -0.0102 expected_RLHFobj: 0.0220, reward_accuracy: 0.5900
+Iteration:  599, train_loss:  0.6901, valid_loss:  0.6891, grad_norm :0.7054, param_norm: 0.9595, expected_regret: -0.0134 expected_RLHFobj: 0.0188, reward_accuracy: 0.5900
+Iteration:  699, train_loss:  0.6901, valid_loss:  0.6893, grad_norm :0.2366, param_norm: 0.9504, expected_regret: -0.0100 expected_RLHFobj: 0.0188, reward_accuracy: 0.5700
+Iteration:  799, train_loss:  0.6897, valid_loss:  0.6901, grad_norm :0.5969, param_norm: 0.9425, expected_regret: -0.0077 expected_RLHFobj: 0.0190, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.6897, valid_loss:  0.6899, grad_norm :0.5319, param_norm: 0.9350, expected_regret: -0.0103 expected_RLHFobj: 0.0174, reward_accuracy: 0.5800
+Iteration:  999, train_loss:  0.6895, valid_loss:  0.6906, grad_norm :0.6366, param_norm: 0.9276, expected_regret: -0.0084 expected_RLHFobj: 0.0189, reward_accuracy: 0.6200
+Logging to logs/exp2_notv/dpo_g1.0/2024-11-27-07-00-13/dpo_2022
+Seed:2022
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  2.1037, valid_loss:  1.9491, grad_norm :1.4518, param_norm: 2.0882, expected_regret: -0.2231 expected_RLHFobj: 1.3204, reward_accuracy: 0.5600
+Iteration:  99, train_loss:  0.7201, valid_loss:  0.7183, grad_norm :0.5281, param_norm: 1.6088, expected_regret: -0.0831 expected_RLHFobj: 0.1975, reward_accuracy: 0.6300
+Iteration:  199, train_loss:  0.7159, valid_loss:  0.7163, grad_norm :0.6096, param_norm: 1.5694, expected_regret: -0.0665 expected_RLHFobj: 0.1850, reward_accuracy: 0.5700
+Iteration:  299, train_loss:  0.7142, valid_loss:  0.7160, grad_norm :0.3585, param_norm: 1.5365, expected_regret: -0.0633 expected_RLHFobj: 0.1801, reward_accuracy: 0.5600
+Iteration:  399, train_loss:  0.7128, valid_loss:  0.7155, grad_norm :0.7104, param_norm: 1.5049, expected_regret: -0.0589 expected_RLHFobj: 0.1690, reward_accuracy: 0.5500
+Iteration:  499, train_loss:  0.7117, valid_loss:  0.7142, grad_norm :0.2632, param_norm: 1.4762, expected_regret: -0.0596 expected_RLHFobj: 0.1587, reward_accuracy: 0.6100
+Iteration:  599, train_loss:  0.7104, valid_loss:  0.7123, grad_norm :0.6347, param_norm: 1.4477, expected_regret: -0.0586 expected_RLHFobj: 0.1530, reward_accuracy: 0.5800
+Iteration:  699, train_loss:  0.7106, valid_loss:  0.7129, grad_norm :0.2900, param_norm: 1.4239, expected_regret: -0.0594 expected_RLHFobj: 0.1550, reward_accuracy: 0.5800
+Iteration:  799, train_loss:  0.7083, valid_loss:  0.7101, grad_norm :0.6120, param_norm: 1.4005, expected_regret: -0.0542 expected_RLHFobj: 0.1373, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.7078, valid_loss:  0.7082, grad_norm :0.3527, param_norm: 1.3796, expected_regret: -0.0533 expected_RLHFobj: 0.1271, reward_accuracy: 0.5800
+Iteration:  999, train_loss:  0.7068, valid_loss:  0.7090, grad_norm :0.3230, param_norm: 1.3584, expected_regret: -0.0479 expected_RLHFobj: 0.1240, reward_accuracy: 0.5700
+Logging to logs/exp2_notv/dpo_g1.0/2024-11-27-07-00-13/dpo_2023
+Seed:2023
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.4765, valid_loss:  1.3985, grad_norm :1.3810, param_norm: 1.2808, expected_regret: -0.1450 expected_RLHFobj: 0.8171, reward_accuracy: 0.5500
+Iteration:  99, train_loss:  0.6955, valid_loss:  0.6962, grad_norm :0.4065, param_norm: 0.9931, expected_regret: -0.0293 expected_RLHFobj: 0.0461, reward_accuracy: 0.6000
+Iteration:  199, train_loss:  0.6945, valid_loss:  0.6970, grad_norm :0.4117, param_norm: 0.9651, expected_regret: -0.0254 expected_RLHFobj: 0.0514, reward_accuracy: 0.6000
+Iteration:  299, train_loss:  0.6941, valid_loss:  0.6930, grad_norm :0.2663, param_norm: 0.9425, expected_regret: -0.0285 expected_RLHFobj: 0.0390, reward_accuracy: 0.6000
+Iteration:  399, train_loss:  0.6933, valid_loss:  0.6931, grad_norm :0.6579, param_norm: 0.9217, expected_regret: -0.0258 expected_RLHFobj: 0.0395, reward_accuracy: 0.6000
+Iteration:  499, train_loss:  0.6931, valid_loss:  0.6964, grad_norm :0.3845, param_norm: 0.9010, expected_regret: -0.0154 expected_RLHFobj: 0.0426, reward_accuracy: 0.5800
+Iteration:  599, train_loss:  0.6925, valid_loss:  0.6944, grad_norm :0.4947, param_norm: 0.8839, expected_regret: -0.0201 expected_RLHFobj: 0.0347, reward_accuracy: 0.6100
+Iteration:  699, train_loss:  0.6923, valid_loss:  0.6924, grad_norm :0.4430, param_norm: 0.8685, expected_regret: -0.0223 expected_RLHFobj: 0.0301, reward_accuracy: 0.6200
+Iteration:  799, train_loss:  0.6918, valid_loss:  0.6929, grad_norm :0.4006, param_norm: 0.8537, expected_regret: -0.0195 expected_RLHFobj: 0.0296, reward_accuracy: 0.6200
+Iteration:  899, train_loss:  0.6913, valid_loss:  0.6932, grad_norm :0.6876, param_norm: 0.8393, expected_regret: -0.0157 expected_RLHFobj: 0.0305, reward_accuracy: 0.6400
+Iteration:  999, train_loss:  0.6913, valid_loss:  0.6914, grad_norm :0.4678, param_norm: 0.8245, expected_regret: -0.0190 expected_RLHFobj: 0.0296, reward_accuracy: 0.5800
+Logging to logs/exp2_notv/dpo_g1.0/2024-11-27-07-00-13/dpo_2024
+Seed:2024
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.6552, valid_loss:  1.5152, grad_norm :1.4303, param_norm: 1.3706, expected_regret: -0.1731 expected_RLHFobj: 0.9872, reward_accuracy: 0.5800
+Iteration:  99, train_loss:  0.6924, valid_loss:  0.6948, grad_norm :0.4527, param_norm: 0.9821, expected_regret: -0.0211 expected_RLHFobj: 0.0348, reward_accuracy: 0.6100
+Iteration:  199, train_loss:  0.6914, valid_loss:  0.6912, grad_norm :0.2584, param_norm: 0.9639, expected_regret: -0.0220 expected_RLHFobj: 0.0259, reward_accuracy: 0.6100
+Iteration:  299, train_loss:  0.6907, valid_loss:  0.6938, grad_norm :0.2827, param_norm: 0.9457, expected_regret: -0.0133 expected_RLHFobj: 0.0330, reward_accuracy: 0.5300
+Iteration:  399, train_loss:  0.6901, valid_loss:  0.6913, grad_norm :0.3308, param_norm: 0.9320, expected_regret: -0.0132 expected_RLHFobj: 0.0250, reward_accuracy: 0.5800
+Iteration:  499, train_loss:  0.6898, valid_loss:  0.6917, grad_norm :0.2160, param_norm: 0.9208, expected_regret: -0.0113 expected_RLHFobj: 0.0256, reward_accuracy: 0.5900
+Iteration:  599, train_loss:  0.6898, valid_loss:  0.6914, grad_norm :0.6630, param_norm: 0.9124, expected_regret: -0.0108 expected_RLHFobj: 0.0238, reward_accuracy: 0.6100
+Iteration:  699, train_loss:  0.6897, valid_loss:  0.6924, grad_norm :0.3231, param_norm: 0.9052, expected_regret: -0.0084 expected_RLHFobj: 0.0255, reward_accuracy: 0.5600
+Iteration:  799, train_loss:  0.6895, valid_loss:  0.6918, grad_norm :0.5293, param_norm: 0.8983, expected_regret: -0.0119 expected_RLHFobj: 0.0251, reward_accuracy: 0.5800
+Iteration:  899, train_loss:  0.6891, valid_loss:  0.6904, grad_norm :0.6710, param_norm: 0.8902, expected_regret: -0.0128 expected_RLHFobj: 0.0199, reward_accuracy: 0.6200
+Iteration:  999, train_loss:  0.6891, valid_loss:  0.6911, grad_norm :0.9082, param_norm: 0.8837, expected_regret: -0.0111 expected_RLHFobj: 0.0207, reward_accuracy: 0.6300
+Logging to logs/exp2_notv/dpo_g1.0/2024-11-27-07-00-13/dpo_2025
+Seed:2025
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.5102, valid_loss:  1.3992, grad_norm :1.4758, param_norm: 1.7738, expected_regret: -0.2009 expected_RLHFobj: 1.0297, reward_accuracy: 0.5400
+Iteration:  99, train_loss:  0.7124, valid_loss:  0.7156, grad_norm :0.5695, param_norm: 1.4976, expected_regret: -0.0602 expected_RLHFobj: 0.1610, reward_accuracy: 0.6200
+Iteration:  199, train_loss:  0.7095, valid_loss:  0.7131, grad_norm :0.5815, param_norm: 1.4503, expected_regret: -0.0528 expected_RLHFobj: 0.1446, reward_accuracy: 0.6100
+Iteration:  299, train_loss:  0.7071, valid_loss:  0.7082, grad_norm :0.3479, param_norm: 1.4087, expected_regret: -0.0516 expected_RLHFobj: 0.1247, reward_accuracy: 0.5700
+Iteration:  399, train_loss:  0.7062, valid_loss:  0.7072, grad_norm :0.9445, param_norm: 1.3755, expected_regret: -0.0477 expected_RLHFobj: 0.1127, reward_accuracy: 0.5900
+Iteration:  499, train_loss:  0.7044, valid_loss:  0.7062, grad_norm :0.4270, param_norm: 1.3420, expected_regret: -0.0457 expected_RLHFobj: 0.1109, reward_accuracy: 0.5700
+Iteration:  599, train_loss:  0.7036, valid_loss:  0.7041, grad_norm :0.6593, param_norm: 1.3176, expected_regret: -0.0454 expected_RLHFobj: 0.1001, reward_accuracy: 0.6000
+Iteration:  699, train_loss:  0.7033, valid_loss:  0.7051, grad_norm :0.3997, param_norm: 1.2916, expected_regret: -0.0364 expected_RLHFobj: 0.0988, reward_accuracy: 0.5100
+Iteration:  799, train_loss:  0.7020, valid_loss:  0.7026, grad_norm :0.4695, param_norm: 1.2679, expected_regret: -0.0407 expected_RLHFobj: 0.0868, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.7020, valid_loss:  0.7037, grad_norm :0.2410, param_norm: 1.2513, expected_regret: -0.0403 expected_RLHFobj: 0.0945, reward_accuracy: 0.5400
+Iteration:  999, train_loss:  0.7011, valid_loss:  0.7012, grad_norm :0.9107, param_norm: 1.2313, expected_regret: -0.0449 expected_RLHFobj: 0.0819, reward_accuracy: 0.6100
+Logging to logs/exp2_notv/nsdpo_g0.9/2024-11-27-07-00-20/dpo_2021
+Seed:2021
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.9233, valid_loss:  1.8704, grad_norm :0.0000, param_norm: 1.5617, expected_regret: -0.1632 expected_RLHFobj: 1.0679, reward_accuracy: 0.5700
+Iteration:  99, train_loss:  0.6918, valid_loss:  0.6921, grad_norm :0.0000, param_norm: 1.0177, expected_regret: -0.0167 expected_RLHFobj: 0.0298, reward_accuracy: 0.5500
+Iteration:  199, train_loss:  0.6914, valid_loss:  0.6932, grad_norm :0.0000, param_norm: 1.0016, expected_regret: -0.0118 expected_RLHFobj: 0.0313, reward_accuracy: 0.5700
+Iteration:  299, train_loss:  0.6912, valid_loss:  0.6897, grad_norm :0.0000, param_norm: 0.9904, expected_regret: -0.0129 expected_RLHFobj: 0.0199, reward_accuracy: 0.6200
+Iteration:  399, train_loss:  0.6905, valid_loss:  0.6897, grad_norm :0.0000, param_norm: 0.9800, expected_regret: -0.0141 expected_RLHFobj: 0.0194, reward_accuracy: 0.6000
+Iteration:  499, train_loss:  0.6902, valid_loss:  0.6908, grad_norm :0.0000, param_norm: 0.9692, expected_regret: -0.0102 expected_RLHFobj: 0.0220, reward_accuracy: 0.5900
+Iteration:  599, train_loss:  0.6901, valid_loss:  0.6891, grad_norm :0.0000, param_norm: 0.9595, expected_regret: -0.0134 expected_RLHFobj: 0.0188, reward_accuracy: 0.5900
+Iteration:  699, train_loss:  0.6901, valid_loss:  0.6893, grad_norm :0.0000, param_norm: 0.9504, expected_regret: -0.0100 expected_RLHFobj: 0.0188, reward_accuracy: 0.5700
+Iteration:  799, train_loss:  0.6897, valid_loss:  0.6901, grad_norm :0.0000, param_norm: 0.9425, expected_regret: -0.0077 expected_RLHFobj: 0.0190, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.6897, valid_loss:  0.6899, grad_norm :0.0000, param_norm: 0.9350, expected_regret: -0.0103 expected_RLHFobj: 0.0174, reward_accuracy: 0.5800
+Iteration:  999, train_loss:  0.6895, valid_loss:  0.6906, grad_norm :0.0000, param_norm: 0.9276, expected_regret: -0.0084 expected_RLHFobj: 0.0189, reward_accuracy: 0.6200
+Logging to logs/exp2_notv/nsdpo_g0.9/2024-11-27-07-00-20/dpo_2022
+Seed:2022
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  2.1037, valid_loss:  1.9491, grad_norm :0.0000, param_norm: 2.0882, expected_regret: -0.2231 expected_RLHFobj: 1.3204, reward_accuracy: 0.5600
+Iteration:  99, train_loss:  0.7201, valid_loss:  0.7183, grad_norm :0.0000, param_norm: 1.6088, expected_regret: -0.0831 expected_RLHFobj: 0.1975, reward_accuracy: 0.6300
+Iteration:  199, train_loss:  0.7159, valid_loss:  0.7163, grad_norm :0.0000, param_norm: 1.5694, expected_regret: -0.0665 expected_RLHFobj: 0.1850, reward_accuracy: 0.5700
+Iteration:  299, train_loss:  0.7142, valid_loss:  0.7160, grad_norm :0.0000, param_norm: 1.5365, expected_regret: -0.0633 expected_RLHFobj: 0.1801, reward_accuracy: 0.5600
+Iteration:  399, train_loss:  0.7128, valid_loss:  0.7155, grad_norm :0.0000, param_norm: 1.5049, expected_regret: -0.0589 expected_RLHFobj: 0.1690, reward_accuracy: 0.5500
+Iteration:  499, train_loss:  0.7117, valid_loss:  0.7142, grad_norm :0.0000, param_norm: 1.4762, expected_regret: -0.0596 expected_RLHFobj: 0.1587, reward_accuracy: 0.6100
+Iteration:  599, train_loss:  0.7104, valid_loss:  0.7123, grad_norm :0.0000, param_norm: 1.4477, expected_regret: -0.0586 expected_RLHFobj: 0.1530, reward_accuracy: 0.5800
+Iteration:  699, train_loss:  0.7106, valid_loss:  0.7129, grad_norm :0.0000, param_norm: 1.4239, expected_regret: -0.0594 expected_RLHFobj: 0.1550, reward_accuracy: 0.5800
+Iteration:  799, train_loss:  0.7083, valid_loss:  0.7101, grad_norm :0.0000, param_norm: 1.4005, expected_regret: -0.0542 expected_RLHFobj: 0.1373, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.7078, valid_loss:  0.7082, grad_norm :0.0000, param_norm: 1.3796, expected_regret: -0.0533 expected_RLHFobj: 0.1271, reward_accuracy: 0.5800
+Iteration:  999, train_loss:  0.7068, valid_loss:  0.7090, grad_norm :0.0000, param_norm: 1.3584, expected_regret: -0.0479 expected_RLHFobj: 0.1240, reward_accuracy: 0.5700
+Logging to logs/exp2_notv/nsdpo_g0.9/2024-11-27-07-00-20/dpo_2023
+Seed:2023
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.4765, valid_loss:  1.3985, grad_norm :0.0000, param_norm: 1.2808, expected_regret: -0.1450 expected_RLHFobj: 0.8171, reward_accuracy: 0.5500
+Iteration:  99, train_loss:  0.6955, valid_loss:  0.6962, grad_norm :0.0000, param_norm: 0.9931, expected_regret: -0.0293 expected_RLHFobj: 0.0461, reward_accuracy: 0.6000
+Iteration:  199, train_loss:  0.6945, valid_loss:  0.6970, grad_norm :0.0000, param_norm: 0.9651, expected_regret: -0.0254 expected_RLHFobj: 0.0514, reward_accuracy: 0.6000
+Iteration:  299, train_loss:  0.6941, valid_loss:  0.6930, grad_norm :0.0000, param_norm: 0.9425, expected_regret: -0.0285 expected_RLHFobj: 0.0390, reward_accuracy: 0.6000
+Iteration:  399, train_loss:  0.6933, valid_loss:  0.6931, grad_norm :0.0000, param_norm: 0.9217, expected_regret: -0.0258 expected_RLHFobj: 0.0395, reward_accuracy: 0.6000
+Iteration:  499, train_loss:  0.6931, valid_loss:  0.6964, grad_norm :0.0000, param_norm: 0.9010, expected_regret: -0.0154 expected_RLHFobj: 0.0426, reward_accuracy: 0.5800
+Iteration:  599, train_loss:  0.6925, valid_loss:  0.6944, grad_norm :0.0000, param_norm: 0.8839, expected_regret: -0.0201 expected_RLHFobj: 0.0347, reward_accuracy: 0.6100
+Iteration:  699, train_loss:  0.6923, valid_loss:  0.6924, grad_norm :0.0000, param_norm: 0.8685, expected_regret: -0.0223 expected_RLHFobj: 0.0301, reward_accuracy: 0.6200
+Iteration:  799, train_loss:  0.6918, valid_loss:  0.6929, grad_norm :0.0000, param_norm: 0.8537, expected_regret: -0.0195 expected_RLHFobj: 0.0296, reward_accuracy: 0.6200
+Iteration:  899, train_loss:  0.6913, valid_loss:  0.6932, grad_norm :0.0000, param_norm: 0.8393, expected_regret: -0.0157 expected_RLHFobj: 0.0305, reward_accuracy: 0.6400
+Iteration:  999, train_loss:  0.6913, valid_loss:  0.6914, grad_norm :0.0000, param_norm: 0.8245, expected_regret: -0.0190 expected_RLHFobj: 0.0296, reward_accuracy: 0.5800
+Logging to logs/exp2_notv/nsdpo_g0.9/2024-11-27-07-00-20/dpo_2024
+Seed:2024
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.6552, valid_loss:  1.5152, grad_norm :0.0000, param_norm: 1.3706, expected_regret: -0.1731 expected_RLHFobj: 0.9872, reward_accuracy: 0.5800
+Iteration:  99, train_loss:  0.6924, valid_loss:  0.6948, grad_norm :0.0000, param_norm: 0.9821, expected_regret: -0.0211 expected_RLHFobj: 0.0348, reward_accuracy: 0.6100
+Iteration:  199, train_loss:  0.6914, valid_loss:  0.6912, grad_norm :0.0000, param_norm: 0.9639, expected_regret: -0.0220 expected_RLHFobj: 0.0259, reward_accuracy: 0.6100
+Iteration:  299, train_loss:  0.6907, valid_loss:  0.6938, grad_norm :0.0000, param_norm: 0.9457, expected_regret: -0.0133 expected_RLHFobj: 0.0330, reward_accuracy: 0.5300
+Iteration:  399, train_loss:  0.6901, valid_loss:  0.6913, grad_norm :0.0000, param_norm: 0.9320, expected_regret: -0.0132 expected_RLHFobj: 0.0250, reward_accuracy: 0.5800
+Iteration:  499, train_loss:  0.6898, valid_loss:  0.6917, grad_norm :0.0000, param_norm: 0.9208, expected_regret: -0.0113 expected_RLHFobj: 0.0256, reward_accuracy: 0.5900
+Iteration:  599, train_loss:  0.6898, valid_loss:  0.6914, grad_norm :0.0000, param_norm: 0.9124, expected_regret: -0.0108 expected_RLHFobj: 0.0238, reward_accuracy: 0.6100
+Iteration:  699, train_loss:  0.6897, valid_loss:  0.6924, grad_norm :0.0000, param_norm: 0.9052, expected_regret: -0.0084 expected_RLHFobj: 0.0255, reward_accuracy: 0.5600
+Iteration:  799, train_loss:  0.6895, valid_loss:  0.6918, grad_norm :0.0000, param_norm: 0.8983, expected_regret: -0.0119 expected_RLHFobj: 0.0251, reward_accuracy: 0.5800
+Iteration:  899, train_loss:  0.6891, valid_loss:  0.6904, grad_norm :0.0000, param_norm: 0.8902, expected_regret: -0.0128 expected_RLHFobj: 0.0199, reward_accuracy: 0.6200
+Iteration:  999, train_loss:  0.6891, valid_loss:  0.6911, grad_norm :0.0000, param_norm: 0.8837, expected_regret: -0.0111 expected_RLHFobj: 0.0207, reward_accuracy: 0.6300
+Logging to logs/exp2_notv/nsdpo_g0.9/2024-11-27-07-00-20/dpo_2025
+Seed:2025
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.5102, valid_loss:  1.3992, grad_norm :0.0000, param_norm: 1.7738, expected_regret: -0.2009 expected_RLHFobj: 1.0297, reward_accuracy: 0.5400
+Iteration:  99, train_loss:  0.7124, valid_loss:  0.7156, grad_norm :0.0000, param_norm: 1.4976, expected_regret: -0.0602 expected_RLHFobj: 0.1610, reward_accuracy: 0.6200
+Iteration:  199, train_loss:  0.7095, valid_loss:  0.7131, grad_norm :0.0000, param_norm: 1.4503, expected_regret: -0.0528 expected_RLHFobj: 0.1446, reward_accuracy: 0.6100
+Iteration:  299, train_loss:  0.7071, valid_loss:  0.7082, grad_norm :0.0000, param_norm: 1.4087, expected_regret: -0.0516 expected_RLHFobj: 0.1247, reward_accuracy: 0.5700
+Iteration:  399, train_loss:  0.7062, valid_loss:  0.7072, grad_norm :0.0000, param_norm: 1.3755, expected_regret: -0.0477 expected_RLHFobj: 0.1127, reward_accuracy: 0.5900
+Iteration:  499, train_loss:  0.7044, valid_loss:  0.7062, grad_norm :0.0000, param_norm: 1.3420, expected_regret: -0.0457 expected_RLHFobj: 0.1109, reward_accuracy: 0.5700
+Iteration:  599, train_loss:  0.7036, valid_loss:  0.7041, grad_norm :0.0000, param_norm: 1.3176, expected_regret: -0.0454 expected_RLHFobj: 0.1001, reward_accuracy: 0.6000
+Iteration:  699, train_loss:  0.7033, valid_loss:  0.7051, grad_norm :0.0000, param_norm: 1.2916, expected_regret: -0.0364 expected_RLHFobj: 0.0988, reward_accuracy: 0.5100
+Iteration:  799, train_loss:  0.7020, valid_loss:  0.7026, grad_norm :0.0000, param_norm: 1.2679, expected_regret: -0.0407 expected_RLHFobj: 0.0868, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.7020, valid_loss:  0.7037, grad_norm :0.0000, param_norm: 1.2513, expected_regret: -0.0403 expected_RLHFobj: 0.0945, reward_accuracy: 0.5400
+Iteration:  999, train_loss:  0.7011, valid_loss:  0.7012, grad_norm :0.0000, param_norm: 1.2313, expected_regret: -0.0449 expected_RLHFobj: 0.0819, reward_accuracy: 0.6100
+Logging to logs/exp2_notv/sigmoid_g1.0/2024-11-27-07-00-47/sigmoidloss_2021
+Seed:2021
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  7693275.3862, valid_loss:  187040519.0464, grad_norm :153.9972, param_norm: 1.5617, expected_regret: 0.0861 expected_RLHFobj: 1.0679, reward_accuracy: 0.5700
+Iteration:  99, train_loss:  2767373.8423, valid_loss:  69205570.9602, grad_norm :53.5161, param_norm: 1.0176, expected_regret: 0.0279 expected_RLHFobj: 0.0298, reward_accuracy: 0.5500
+Iteration:  199, train_loss:  2765781.4864, valid_loss:  69322206.9052, grad_norm :31.2879, param_norm: 1.0014, expected_regret: 0.0399 expected_RLHFobj: 0.0313, reward_accuracy: 0.5700
+Iteration:  299, train_loss:  2764599.6553, valid_loss:  68967562.9574, grad_norm :57.9073, param_norm: 0.9901, expected_regret: 0.0331 expected_RLHFobj: 0.0199, reward_accuracy: 0.6200
+Iteration:  399, train_loss:  2761998.2953, valid_loss:  68971698.4122, grad_norm :28.6368, param_norm: 0.9796, expected_regret: 0.0331 expected_RLHFobj: 0.0194, reward_accuracy: 0.6000
+Iteration:  499, train_loss:  2760631.6271, valid_loss:  69075564.2249, grad_norm :54.9779, param_norm: 0.9688, expected_regret: 0.0399 expected_RLHFobj: 0.0220, reward_accuracy: 0.5900
+Iteration:  599, train_loss:  2760419.0756, valid_loss:  68911861.5979, grad_norm :70.5413, param_norm: 0.9590, expected_regret: 0.0331 expected_RLHFobj: 0.0188, reward_accuracy: 0.5900
+Iteration:  699, train_loss:  2760351.0559, valid_loss:  68930227.3987, grad_norm :23.6652, param_norm: 0.9498, expected_regret: 0.0399 expected_RLHFobj: 0.0187, reward_accuracy: 0.5700
+Iteration:  799, train_loss:  2758806.5072, valid_loss:  69009556.4598, grad_norm :59.6850, param_norm: 0.9419, expected_regret: 0.0399 expected_RLHFobj: 0.0190, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  2758608.8740, valid_loss:  68988630.6597, grad_norm :53.1891, param_norm: 0.9344, expected_regret: 0.0331 expected_RLHFobj: 0.0173, reward_accuracy: 0.5800
+Iteration:  999, train_loss:  2758161.3750, valid_loss:  69060788.9959, grad_norm :63.6576, param_norm: 0.9269, expected_regret: 0.0331 expected_RLHFobj: 0.0188, reward_accuracy: 0.6200
+Logging to logs/exp2_notv/sigmoid_g1.0/2024-11-27-07-00-47/sigmoidloss_2022
+Seed:2022
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  8414943.8138, valid_loss:  194913902.2340, grad_norm :145.1948, param_norm: 2.0882, expected_regret: 0.0543 expected_RLHFobj: 1.3204, reward_accuracy: 0.5600
+Iteration:  99, train_loss:  2880354.5143, valid_loss:  71832469.7366, grad_norm :52.8153, param_norm: 1.6086, expected_regret: 0.0399 expected_RLHFobj: 0.1975, reward_accuracy: 0.6300
+Iteration:  199, train_loss:  2863497.6743, valid_loss:  71632063.2729, grad_norm :60.9584, param_norm: 1.5691, expected_regret: 0.0490 expected_RLHFobj: 0.1848, reward_accuracy: 0.5700
+Iteration:  299, train_loss:  2856692.2647, valid_loss:  71599958.0293, grad_norm :35.8538, param_norm: 1.5361, expected_regret: 0.0490 expected_RLHFobj: 0.1799, reward_accuracy: 0.5600
+Iteration:  399, train_loss:  2851045.0426, valid_loss:  71550194.3082, grad_norm :71.0385, param_norm: 1.5043, expected_regret: 0.0490 expected_RLHFobj: 0.1688, reward_accuracy: 0.5500
+Iteration:  499, train_loss:  2846732.6691, valid_loss:  71413260.2908, grad_norm :26.3199, param_norm: 1.4756, expected_regret: 0.0399 expected_RLHFobj: 0.1585, reward_accuracy: 0.6100
+Iteration:  599, train_loss:  2841366.8731, valid_loss:  71229009.8019, grad_norm :63.4647, param_norm: 1.4469, expected_regret: 0.0399 expected_RLHFobj: 0.1528, reward_accuracy: 0.5800
+Iteration:  699, train_loss:  2842069.7851, valid_loss:  71289798.1924, grad_norm :29.0011, param_norm: 1.4231, expected_regret: 0.0399 expected_RLHFobj: 0.1547, reward_accuracy: 0.5800
+Iteration:  799, train_loss:  2833108.3507, valid_loss:  71004395.9097, grad_norm :61.1920, param_norm: 1.3996, expected_regret: 0.0399 expected_RLHFobj: 0.1371, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  2831050.2734, valid_loss:  70813099.3139, grad_norm :35.2787, param_norm: 1.3787, expected_regret: 0.0399 expected_RLHFobj: 0.1269, reward_accuracy: 0.5800
+Iteration:  999, train_loss:  2827145.1445, valid_loss:  70892423.6123, grad_norm :32.2973, param_norm: 1.3574, expected_regret: 0.0490 expected_RLHFobj: 0.1237, reward_accuracy: 0.5700
+Logging to logs/exp2_notv/sigmoid_g1.0/2024-11-27-07-00-47/sigmoidloss_2023
+Seed:2023
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  5906162.0563, valid_loss:  139852218.0366, grad_norm :138.1039, param_norm: 1.2808, expected_regret: 0.0776 expected_RLHFobj: 0.8171, reward_accuracy: 0.5500
+Iteration:  99, train_loss:  2781855.4677, valid_loss:  69620817.9376, grad_norm :40.6513, param_norm: 0.9930, expected_regret: 0.0399 expected_RLHFobj: 0.0461, reward_accuracy: 0.6000
+Iteration:  199, train_loss:  2778017.8463, valid_loss:  69702662.5379, grad_norm :41.1667, param_norm: 0.9649, expected_regret: 0.0399 expected_RLHFobj: 0.0513, reward_accuracy: 0.6000
+Iteration:  299, train_loss:  2776184.1482, valid_loss:  69296074.2449, grad_norm :26.6295, param_norm: 0.9422, expected_regret: 0.0399 expected_RLHFobj: 0.0390, reward_accuracy: 0.6000
+Iteration:  399, train_loss:  2773330.6020, valid_loss:  69312235.1092, grad_norm :65.7888, param_norm: 0.9213, expected_regret: 0.0368 expected_RLHFobj: 0.0394, reward_accuracy: 0.6000
+Iteration:  499, train_loss:  2772225.8369, valid_loss:  69637137.8242, grad_norm :38.4452, param_norm: 0.9005, expected_regret: 0.0490 expected_RLHFobj: 0.0425, reward_accuracy: 0.5800
+Iteration:  599, train_loss:  2770026.9204, valid_loss:  69439061.0503, grad_norm :49.4694, param_norm: 0.8834, expected_regret: 0.0399 expected_RLHFobj: 0.0347, reward_accuracy: 0.6100
+Iteration:  699, train_loss:  2768982.1214, valid_loss:  69234143.1491, grad_norm :44.2986, param_norm: 0.8679, expected_regret: 0.0399 expected_RLHFobj: 0.0300, reward_accuracy: 0.6200
+Iteration:  799, train_loss:  2766988.9826, valid_loss:  69284567.8359, grad_norm :40.0615, param_norm: 0.8530, expected_regret: 0.0399 expected_RLHFobj: 0.0295, reward_accuracy: 0.6200
+Iteration:  899, train_loss:  2764974.9467, valid_loss:  69318031.9712, grad_norm :68.7516, param_norm: 0.8386, expected_regret: 0.0399 expected_RLHFobj: 0.0305, reward_accuracy: 0.6400
+Iteration:  999, train_loss:  2765290.2953, valid_loss:  69141289.0959, grad_norm :46.7841, param_norm: 0.8238, expected_regret: 0.0368 expected_RLHFobj: 0.0295, reward_accuracy: 0.5800
+Logging to logs/exp2_notv/sigmoid_g1.0/2024-11-27-07-00-47/sigmoidloss_2024
+Seed:2024
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  6620752.5285, valid_loss:  151521069.8356, grad_norm :143.0378, param_norm: 1.3706, expected_regret: 0.0653 expected_RLHFobj: 0.9872, reward_accuracy: 0.5800
+Iteration:  99, train_loss:  2769457.3132, valid_loss:  69475715.2492, grad_norm :45.2711, param_norm: 0.9820, expected_regret: 0.0399 expected_RLHFobj: 0.0348, reward_accuracy: 0.6100
+Iteration:  199, train_loss:  2765690.7184, valid_loss:  69119164.9300, grad_norm :25.8380, param_norm: 0.9637, expected_regret: 0.0325 expected_RLHFobj: 0.0259, reward_accuracy: 0.6100
+Iteration:  299, train_loss:  2762960.9832, valid_loss:  69379104.9512, grad_norm :28.2748, param_norm: 0.9454, expected_regret: 0.0368 expected_RLHFobj: 0.0330, reward_accuracy: 0.5300
+Iteration:  399, train_loss:  2760544.5332, valid_loss:  69130697.9833, grad_norm :33.0821, param_norm: 0.9316, expected_regret: 0.0399 expected_RLHFobj: 0.0249, reward_accuracy: 0.5800
+Iteration:  499, train_loss:  2759089.4617, valid_loss:  69172626.9007, grad_norm :21.6035, param_norm: 0.9203, expected_regret: 0.0399 expected_RLHFobj: 0.0256, reward_accuracy: 0.5900
+Iteration:  599, train_loss:  2759127.8782, valid_loss:  69140011.2929, grad_norm :66.2977, param_norm: 0.9119, expected_regret: 0.0399 expected_RLHFobj: 0.0237, reward_accuracy: 0.6100
+Iteration:  699, train_loss:  2758594.7566, valid_loss:  69234514.5969, grad_norm :32.3107, param_norm: 0.9047, expected_regret: 0.0399 expected_RLHFobj: 0.0255, reward_accuracy: 0.5600
+Iteration:  799, train_loss:  2757803.2785, valid_loss:  69180242.4556, grad_norm :52.9299, param_norm: 0.8976, expected_regret: 0.0368 expected_RLHFobj: 0.0250, reward_accuracy: 0.5800
+Iteration:  899, train_loss:  2756317.2443, valid_loss:  69034294.0882, grad_norm :67.1080, param_norm: 0.8896, expected_regret: 0.0399 expected_RLHFobj: 0.0199, reward_accuracy: 0.6200
+Iteration:  999, train_loss:  2756263.0468, valid_loss:  69111503.7851, grad_norm :90.8142, param_norm: 0.8830, expected_regret: 0.0393 expected_RLHFobj: 0.0206, reward_accuracy: 0.6300
+Logging to logs/exp2_notv/sigmoid_g1.0/2024-11-27-07-00-47/sigmoidloss_2025
+Seed:2025
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  6040733.3925, valid_loss:  139918267.2530, grad_norm :147.5852, param_norm: 1.7737, expected_regret: 0.0516 expected_RLHFobj: 1.0297, reward_accuracy: 0.5400
+Iteration:  99, train_loss:  2849668.6490, valid_loss:  71561612.0359, grad_norm :56.9488, param_norm: 1.4973, expected_regret: 0.0399 expected_RLHFobj: 0.1609, reward_accuracy: 0.6200
+Iteration:  199, train_loss:  2837892.2835, valid_loss:  71307302.7226, grad_norm :58.1481, param_norm: 1.4499, expected_regret: 0.0490 expected_RLHFobj: 0.1445, reward_accuracy: 0.6100
+Iteration:  299, train_loss:  2828350.0035, valid_loss:  70820069.3574, grad_norm :34.7859, param_norm: 1.4081, expected_regret: 0.0399 expected_RLHFobj: 0.1246, reward_accuracy: 0.5700
+Iteration:  399, train_loss:  2824539.3930, valid_loss:  70716579.0203, grad_norm :94.4525, param_norm: 1.3748, expected_regret: 0.0399 expected_RLHFobj: 0.1126, reward_accuracy: 0.5900
+Iteration:  499, train_loss:  2817534.7330, valid_loss:  70620688.4386, grad_norm :42.7036, param_norm: 1.3412, expected_regret: 0.0399 expected_RLHFobj: 0.1107, reward_accuracy: 0.5700
+Iteration:  599, train_loss:  2814109.7367, valid_loss:  70407205.8142, grad_norm :65.9262, param_norm: 1.3167, expected_regret: 0.0399 expected_RLHFobj: 0.0999, reward_accuracy: 0.6000
+Iteration:  699, train_loss:  2813268.5560, valid_loss:  70510962.4028, grad_norm :39.9647, param_norm: 1.2907, expected_regret: 0.0490 expected_RLHFobj: 0.0986, reward_accuracy: 0.5100
+Iteration:  799, train_loss:  2807779.9407, valid_loss:  70259406.6743, grad_norm :46.9374, param_norm: 1.2669, expected_regret: 0.0399 expected_RLHFobj: 0.0866, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  2807854.5157, valid_loss:  70363413.3719, grad_norm :24.1088, param_norm: 1.2502, expected_regret: 0.0399 expected_RLHFobj: 0.0942, reward_accuracy: 0.5400
+Iteration:  999, train_loss:  2804213.7159, valid_loss:  70116196.1219, grad_norm :91.0644, param_norm: 1.2302, expected_regret: 0.0399 expected_RLHFobj: 0.0816, reward_accuracy: 0.6100
+Logging to logs/exp2_notv/nsdpo_g0.3/2024-11-27-07-01-13/dpo_2021
+Seed:2021
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.9233, valid_loss:  1.8704, grad_norm :0.0000, param_norm: 1.5617, expected_regret: -0.1632 expected_RLHFobj: 1.0679, reward_accuracy: 0.5700
+Iteration:  99, train_loss:  0.6918, valid_loss:  0.6921, grad_norm :0.0000, param_norm: 1.0177, expected_regret: -0.0167 expected_RLHFobj: 0.0298, reward_accuracy: 0.5500
+Iteration:  199, train_loss:  0.6914, valid_loss:  0.6932, grad_norm :0.0000, param_norm: 1.0016, expected_regret: -0.0118 expected_RLHFobj: 0.0313, reward_accuracy: 0.5700
+Iteration:  299, train_loss:  0.6912, valid_loss:  0.6897, grad_norm :0.0000, param_norm: 0.9904, expected_regret: -0.0129 expected_RLHFobj: 0.0199, reward_accuracy: 0.6200
+Iteration:  399, train_loss:  0.6905, valid_loss:  0.6897, grad_norm :0.0000, param_norm: 0.9800, expected_regret: -0.0141 expected_RLHFobj: 0.0194, reward_accuracy: 0.6000
+Iteration:  499, train_loss:  0.6902, valid_loss:  0.6908, grad_norm :0.0000, param_norm: 0.9692, expected_regret: -0.0102 expected_RLHFobj: 0.0220, reward_accuracy: 0.5900
+Iteration:  599, train_loss:  0.6901, valid_loss:  0.6891, grad_norm :0.0000, param_norm: 0.9595, expected_regret: -0.0134 expected_RLHFobj: 0.0188, reward_accuracy: 0.5900
+Iteration:  699, train_loss:  0.6901, valid_loss:  0.6893, grad_norm :0.0000, param_norm: 0.9504, expected_regret: -0.0100 expected_RLHFobj: 0.0188, reward_accuracy: 0.5700
+Iteration:  799, train_loss:  0.6897, valid_loss:  0.6901, grad_norm :0.0000, param_norm: 0.9425, expected_regret: -0.0077 expected_RLHFobj: 0.0190, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.6897, valid_loss:  0.6899, grad_norm :0.0000, param_norm: 0.9350, expected_regret: -0.0103 expected_RLHFobj: 0.0174, reward_accuracy: 0.5800
+Iteration:  999, train_loss:  0.6895, valid_loss:  0.6906, grad_norm :0.0000, param_norm: 0.9276, expected_regret: -0.0084 expected_RLHFobj: 0.0189, reward_accuracy: 0.6200
+Logging to logs/exp2_notv/nsdpo_g0.3/2024-11-27-07-01-13/dpo_2022
+Seed:2022
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  2.1037, valid_loss:  1.9491, grad_norm :0.0000, param_norm: 2.0882, expected_regret: -0.2231 expected_RLHFobj: 1.3204, reward_accuracy: 0.5600
+Iteration:  99, train_loss:  0.7201, valid_loss:  0.7183, grad_norm :0.0000, param_norm: 1.6088, expected_regret: -0.0831 expected_RLHFobj: 0.1975, reward_accuracy: 0.6300
+Iteration:  199, train_loss:  0.7159, valid_loss:  0.7163, grad_norm :0.0000, param_norm: 1.5694, expected_regret: -0.0665 expected_RLHFobj: 0.1850, reward_accuracy: 0.5700
+Iteration:  299, train_loss:  0.7142, valid_loss:  0.7160, grad_norm :0.0000, param_norm: 1.5365, expected_regret: -0.0633 expected_RLHFobj: 0.1801, reward_accuracy: 0.5600
+Iteration:  399, train_loss:  0.7128, valid_loss:  0.7155, grad_norm :0.0000, param_norm: 1.5049, expected_regret: -0.0589 expected_RLHFobj: 0.1690, reward_accuracy: 0.5500
+Iteration:  499, train_loss:  0.7117, valid_loss:  0.7142, grad_norm :0.0000, param_norm: 1.4762, expected_regret: -0.0596 expected_RLHFobj: 0.1587, reward_accuracy: 0.6100
+Iteration:  599, train_loss:  0.7104, valid_loss:  0.7123, grad_norm :0.0000, param_norm: 1.4477, expected_regret: -0.0586 expected_RLHFobj: 0.1530, reward_accuracy: 0.5800
+Iteration:  699, train_loss:  0.7106, valid_loss:  0.7129, grad_norm :0.0000, param_norm: 1.4239, expected_regret: -0.0594 expected_RLHFobj: 0.1550, reward_accuracy: 0.5800
+Iteration:  799, train_loss:  0.7083, valid_loss:  0.7101, grad_norm :0.0000, param_norm: 1.4005, expected_regret: -0.0542 expected_RLHFobj: 0.1373, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.7078, valid_loss:  0.7082, grad_norm :0.0000, param_norm: 1.3796, expected_regret: -0.0533 expected_RLHFobj: 0.1271, reward_accuracy: 0.5800
+Iteration:  999, train_loss:  0.7068, valid_loss:  0.7090, grad_norm :0.0000, param_norm: 1.3584, expected_regret: -0.0479 expected_RLHFobj: 0.1240, reward_accuracy: 0.5700
+Logging to logs/exp2_notv/nsdpo_g0.3/2024-11-27-07-01-13/dpo_2023
+Seed:2023
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.4765, valid_loss:  1.3985, grad_norm :0.0000, param_norm: 1.2808, expected_regret: -0.1450 expected_RLHFobj: 0.8171, reward_accuracy: 0.5500
+Iteration:  99, train_loss:  0.6955, valid_loss:  0.6962, grad_norm :0.0000, param_norm: 0.9931, expected_regret: -0.0293 expected_RLHFobj: 0.0461, reward_accuracy: 0.6000
+Iteration:  199, train_loss:  0.6945, valid_loss:  0.6970, grad_norm :0.0000, param_norm: 0.9651, expected_regret: -0.0254 expected_RLHFobj: 0.0514, reward_accuracy: 0.6000
+Iteration:  299, train_loss:  0.6941, valid_loss:  0.6930, grad_norm :0.0000, param_norm: 0.9425, expected_regret: -0.0285 expected_RLHFobj: 0.0390, reward_accuracy: 0.6000
+Iteration:  399, train_loss:  0.6933, valid_loss:  0.6931, grad_norm :0.0000, param_norm: 0.9217, expected_regret: -0.0258 expected_RLHFobj: 0.0395, reward_accuracy: 0.6000
+Iteration:  499, train_loss:  0.6931, valid_loss:  0.6964, grad_norm :0.0000, param_norm: 0.9010, expected_regret: -0.0154 expected_RLHFobj: 0.0426, reward_accuracy: 0.5800
+Iteration:  599, train_loss:  0.6925, valid_loss:  0.6944, grad_norm :0.0000, param_norm: 0.8839, expected_regret: -0.0201 expected_RLHFobj: 0.0347, reward_accuracy: 0.6100
+Iteration:  699, train_loss:  0.6923, valid_loss:  0.6924, grad_norm :0.0000, param_norm: 0.8685, expected_regret: -0.0223 expected_RLHFobj: 0.0301, reward_accuracy: 0.6200
+Iteration:  799, train_loss:  0.6918, valid_loss:  0.6929, grad_norm :0.0000, param_norm: 0.8537, expected_regret: -0.0195 expected_RLHFobj: 0.0296, reward_accuracy: 0.6200
+Iteration:  899, train_loss:  0.6913, valid_loss:  0.6932, grad_norm :0.0000, param_norm: 0.8393, expected_regret: -0.0157 expected_RLHFobj: 0.0305, reward_accuracy: 0.6400
+Iteration:  999, train_loss:  0.6913, valid_loss:  0.6914, grad_norm :0.0000, param_norm: 0.8245, expected_regret: -0.0190 expected_RLHFobj: 0.0296, reward_accuracy: 0.5800
+Logging to logs/exp2_notv/nsdpo_g0.3/2024-11-27-07-01-13/dpo_2024
+Seed:2024
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.6552, valid_loss:  1.5152, grad_norm :0.0000, param_norm: 1.3706, expected_regret: -0.1731 expected_RLHFobj: 0.9872, reward_accuracy: 0.5800
+Iteration:  99, train_loss:  0.6924, valid_loss:  0.6948, grad_norm :0.0000, param_norm: 0.9821, expected_regret: -0.0211 expected_RLHFobj: 0.0348, reward_accuracy: 0.6100
+Iteration:  199, train_loss:  0.6914, valid_loss:  0.6912, grad_norm :0.0000, param_norm: 0.9639, expected_regret: -0.0220 expected_RLHFobj: 0.0259, reward_accuracy: 0.6100
+Iteration:  299, train_loss:  0.6907, valid_loss:  0.6938, grad_norm :0.0000, param_norm: 0.9457, expected_regret: -0.0133 expected_RLHFobj: 0.0330, reward_accuracy: 0.5300
+Iteration:  399, train_loss:  0.6901, valid_loss:  0.6913, grad_norm :0.0000, param_norm: 0.9320, expected_regret: -0.0132 expected_RLHFobj: 0.0250, reward_accuracy: 0.5800
+Iteration:  499, train_loss:  0.6898, valid_loss:  0.6917, grad_norm :0.0000, param_norm: 0.9208, expected_regret: -0.0113 expected_RLHFobj: 0.0256, reward_accuracy: 0.5900
+Iteration:  599, train_loss:  0.6898, valid_loss:  0.6914, grad_norm :0.0000, param_norm: 0.9124, expected_regret: -0.0108 expected_RLHFobj: 0.0238, reward_accuracy: 0.6100
+Iteration:  699, train_loss:  0.6897, valid_loss:  0.6924, grad_norm :0.0000, param_norm: 0.9052, expected_regret: -0.0084 expected_RLHFobj: 0.0255, reward_accuracy: 0.5600
+Iteration:  799, train_loss:  0.6895, valid_loss:  0.6918, grad_norm :0.0000, param_norm: 0.8983, expected_regret: -0.0119 expected_RLHFobj: 0.0251, reward_accuracy: 0.5800
+Iteration:  899, train_loss:  0.6891, valid_loss:  0.6904, grad_norm :0.0000, param_norm: 0.8902, expected_regret: -0.0128 expected_RLHFobj: 0.0199, reward_accuracy: 0.6200
+Iteration:  999, train_loss:  0.6891, valid_loss:  0.6911, grad_norm :0.0000, param_norm: 0.8837, expected_regret: -0.0111 expected_RLHFobj: 0.0207, reward_accuracy: 0.6300
+Logging to logs/exp2_notv/nsdpo_g0.3/2024-11-27-07-01-13/dpo_2025
+Seed:2025
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.5102, valid_loss:  1.3992, grad_norm :0.0000, param_norm: 1.7738, expected_regret: -0.2009 expected_RLHFobj: 1.0297, reward_accuracy: 0.5400
+Iteration:  99, train_loss:  0.7124, valid_loss:  0.7156, grad_norm :0.0000, param_norm: 1.4976, expected_regret: -0.0602 expected_RLHFobj: 0.1610, reward_accuracy: 0.6200
+Iteration:  199, train_loss:  0.7095, valid_loss:  0.7131, grad_norm :0.0000, param_norm: 1.4503, expected_regret: -0.0528 expected_RLHFobj: 0.1446, reward_accuracy: 0.6100
+Iteration:  299, train_loss:  0.7071, valid_loss:  0.7082, grad_norm :0.0000, param_norm: 1.4087, expected_regret: -0.0516 expected_RLHFobj: 0.1247, reward_accuracy: 0.5700
+Iteration:  399, train_loss:  0.7062, valid_loss:  0.7072, grad_norm :0.0000, param_norm: 1.3755, expected_regret: -0.0477 expected_RLHFobj: 0.1127, reward_accuracy: 0.5900
+Iteration:  499, train_loss:  0.7044, valid_loss:  0.7062, grad_norm :0.0000, param_norm: 1.3420, expected_regret: -0.0457 expected_RLHFobj: 0.1109, reward_accuracy: 0.5700
+Iteration:  599, train_loss:  0.7036, valid_loss:  0.7041, grad_norm :0.0000, param_norm: 1.3176, expected_regret: -0.0454 expected_RLHFobj: 0.1001, reward_accuracy: 0.6000
+Iteration:  699, train_loss:  0.7033, valid_loss:  0.7051, grad_norm :0.0000, param_norm: 1.2916, expected_regret: -0.0364 expected_RLHFobj: 0.0988, reward_accuracy: 0.5100
+Iteration:  799, train_loss:  0.7020, valid_loss:  0.7026, grad_norm :0.0000, param_norm: 1.2679, expected_regret: -0.0407 expected_RLHFobj: 0.0868, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.7020, valid_loss:  0.7037, grad_norm :0.0000, param_norm: 1.2513, expected_regret: -0.0403 expected_RLHFobj: 0.0945, reward_accuracy: 0.5400
+Iteration:  999, train_loss:  0.7011, valid_loss:  0.7012, grad_norm :0.0000, param_norm: 1.2313, expected_regret: -0.0449 expected_RLHFobj: 0.0819, reward_accuracy: 0.6100
+Logging to logs/exp2_notv/nsdpo_g0.7/2024-11-27-07-01-41/dpo_2021
+Seed:2021
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.9233, valid_loss:  1.8704, grad_norm :0.0000, param_norm: 1.5617, expected_regret: -0.1632 expected_RLHFobj: 1.0679, reward_accuracy: 0.5700
+Iteration:  99, train_loss:  0.6918, valid_loss:  0.6921, grad_norm :0.0000, param_norm: 1.0177, expected_regret: -0.0167 expected_RLHFobj: 0.0298, reward_accuracy: 0.5500
+Iteration:  199, train_loss:  0.6914, valid_loss:  0.6932, grad_norm :0.0000, param_norm: 1.0016, expected_regret: -0.0118 expected_RLHFobj: 0.0313, reward_accuracy: 0.5700
+Iteration:  299, train_loss:  0.6912, valid_loss:  0.6897, grad_norm :0.0000, param_norm: 0.9904, expected_regret: -0.0129 expected_RLHFobj: 0.0199, reward_accuracy: 0.6200
+Iteration:  399, train_loss:  0.6905, valid_loss:  0.6897, grad_norm :0.0000, param_norm: 0.9800, expected_regret: -0.0141 expected_RLHFobj: 0.0194, reward_accuracy: 0.6000
+Iteration:  499, train_loss:  0.6902, valid_loss:  0.6908, grad_norm :0.0000, param_norm: 0.9692, expected_regret: -0.0102 expected_RLHFobj: 0.0220, reward_accuracy: 0.5900
+Iteration:  599, train_loss:  0.6901, valid_loss:  0.6891, grad_norm :0.0000, param_norm: 0.9595, expected_regret: -0.0134 expected_RLHFobj: 0.0188, reward_accuracy: 0.5900
+Iteration:  699, train_loss:  0.6901, valid_loss:  0.6893, grad_norm :0.0000, param_norm: 0.9504, expected_regret: -0.0100 expected_RLHFobj: 0.0188, reward_accuracy: 0.5700
+Iteration:  799, train_loss:  0.6897, valid_loss:  0.6901, grad_norm :0.0000, param_norm: 0.9425, expected_regret: -0.0077 expected_RLHFobj: 0.0190, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.6897, valid_loss:  0.6899, grad_norm :0.0000, param_norm: 0.9350, expected_regret: -0.0103 expected_RLHFobj: 0.0174, reward_accuracy: 0.5800
+Iteration:  999, train_loss:  0.6895, valid_loss:  0.6906, grad_norm :0.0000, param_norm: 0.9276, expected_regret: -0.0084 expected_RLHFobj: 0.0189, reward_accuracy: 0.6200
+Logging to logs/exp2_notv/nsdpo_g0.7/2024-11-27-07-01-41/dpo_2022
+Seed:2022
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  2.1037, valid_loss:  1.9491, grad_norm :0.0000, param_norm: 2.0882, expected_regret: -0.2231 expected_RLHFobj: 1.3204, reward_accuracy: 0.5600
+Iteration:  99, train_loss:  0.7201, valid_loss:  0.7183, grad_norm :0.0000, param_norm: 1.6088, expected_regret: -0.0831 expected_RLHFobj: 0.1975, reward_accuracy: 0.6300
+Iteration:  199, train_loss:  0.7159, valid_loss:  0.7163, grad_norm :0.0000, param_norm: 1.5694, expected_regret: -0.0665 expected_RLHFobj: 0.1850, reward_accuracy: 0.5700
+Iteration:  299, train_loss:  0.7142, valid_loss:  0.7160, grad_norm :0.0000, param_norm: 1.5365, expected_regret: -0.0633 expected_RLHFobj: 0.1801, reward_accuracy: 0.5600
+Iteration:  399, train_loss:  0.7128, valid_loss:  0.7155, grad_norm :0.0000, param_norm: 1.5049, expected_regret: -0.0589 expected_RLHFobj: 0.1690, reward_accuracy: 0.5500
+Iteration:  499, train_loss:  0.7117, valid_loss:  0.7142, grad_norm :0.0000, param_norm: 1.4762, expected_regret: -0.0596 expected_RLHFobj: 0.1587, reward_accuracy: 0.6100
+Iteration:  599, train_loss:  0.7104, valid_loss:  0.7123, grad_norm :0.0000, param_norm: 1.4477, expected_regret: -0.0586 expected_RLHFobj: 0.1530, reward_accuracy: 0.5800
+Iteration:  699, train_loss:  0.7106, valid_loss:  0.7129, grad_norm :0.0000, param_norm: 1.4239, expected_regret: -0.0594 expected_RLHFobj: 0.1550, reward_accuracy: 0.5800
+Iteration:  799, train_loss:  0.7083, valid_loss:  0.7101, grad_norm :0.0000, param_norm: 1.4005, expected_regret: -0.0542 expected_RLHFobj: 0.1373, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.7078, valid_loss:  0.7082, grad_norm :0.0000, param_norm: 1.3796, expected_regret: -0.0533 expected_RLHFobj: 0.1271, reward_accuracy: 0.5800
+Iteration:  999, train_loss:  0.7068, valid_loss:  0.7090, grad_norm :0.0000, param_norm: 1.3584, expected_regret: -0.0479 expected_RLHFobj: 0.1240, reward_accuracy: 0.5700
+Logging to logs/exp2_notv/nsdpo_g0.7/2024-11-27-07-01-41/dpo_2023
+Seed:2023
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.4765, valid_loss:  1.3985, grad_norm :0.0000, param_norm: 1.2808, expected_regret: -0.1450 expected_RLHFobj: 0.8171, reward_accuracy: 0.5500
+Iteration:  99, train_loss:  0.6955, valid_loss:  0.6962, grad_norm :0.0000, param_norm: 0.9931, expected_regret: -0.0293 expected_RLHFobj: 0.0461, reward_accuracy: 0.6000
+Iteration:  199, train_loss:  0.6945, valid_loss:  0.6970, grad_norm :0.0000, param_norm: 0.9651, expected_regret: -0.0254 expected_RLHFobj: 0.0514, reward_accuracy: 0.6000
+Iteration:  299, train_loss:  0.6941, valid_loss:  0.6930, grad_norm :0.0000, param_norm: 0.9425, expected_regret: -0.0285 expected_RLHFobj: 0.0390, reward_accuracy: 0.6000
+Iteration:  399, train_loss:  0.6933, valid_loss:  0.6931, grad_norm :0.0000, param_norm: 0.9217, expected_regret: -0.0258 expected_RLHFobj: 0.0395, reward_accuracy: 0.6000
+Iteration:  499, train_loss:  0.6931, valid_loss:  0.6964, grad_norm :0.0000, param_norm: 0.9010, expected_regret: -0.0154 expected_RLHFobj: 0.0426, reward_accuracy: 0.5800
+Iteration:  599, train_loss:  0.6925, valid_loss:  0.6944, grad_norm :0.0000, param_norm: 0.8839, expected_regret: -0.0201 expected_RLHFobj: 0.0347, reward_accuracy: 0.6100
+Iteration:  699, train_loss:  0.6923, valid_loss:  0.6924, grad_norm :0.0000, param_norm: 0.8685, expected_regret: -0.0223 expected_RLHFobj: 0.0301, reward_accuracy: 0.6200
+Iteration:  799, train_loss:  0.6918, valid_loss:  0.6929, grad_norm :0.0000, param_norm: 0.8537, expected_regret: -0.0195 expected_RLHFobj: 0.0296, reward_accuracy: 0.6200
+Iteration:  899, train_loss:  0.6913, valid_loss:  0.6932, grad_norm :0.0000, param_norm: 0.8393, expected_regret: -0.0157 expected_RLHFobj: 0.0305, reward_accuracy: 0.6400
+Iteration:  999, train_loss:  0.6913, valid_loss:  0.6914, grad_norm :0.0000, param_norm: 0.8245, expected_regret: -0.0190 expected_RLHFobj: 0.0296, reward_accuracy: 0.5800
+Logging to logs/exp2_notv/nsdpo_g0.7/2024-11-27-07-01-41/dpo_2024
+Seed:2024
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.6552, valid_loss:  1.5152, grad_norm :0.0000, param_norm: 1.3706, expected_regret: -0.1731 expected_RLHFobj: 0.9872, reward_accuracy: 0.5800
+Iteration:  99, train_loss:  0.6924, valid_loss:  0.6948, grad_norm :0.0000, param_norm: 0.9821, expected_regret: -0.0211 expected_RLHFobj: 0.0348, reward_accuracy: 0.6100
+Iteration:  199, train_loss:  0.6914, valid_loss:  0.6912, grad_norm :0.0000, param_norm: 0.9639, expected_regret: -0.0220 expected_RLHFobj: 0.0259, reward_accuracy: 0.6100
+Iteration:  299, train_loss:  0.6907, valid_loss:  0.6938, grad_norm :0.0000, param_norm: 0.9457, expected_regret: -0.0133 expected_RLHFobj: 0.0330, reward_accuracy: 0.5300
+Iteration:  399, train_loss:  0.6901, valid_loss:  0.6913, grad_norm :0.0000, param_norm: 0.9320, expected_regret: -0.0132 expected_RLHFobj: 0.0250, reward_accuracy: 0.5800
+Iteration:  499, train_loss:  0.6898, valid_loss:  0.6917, grad_norm :0.0000, param_norm: 0.9208, expected_regret: -0.0113 expected_RLHFobj: 0.0256, reward_accuracy: 0.5900
+Iteration:  599, train_loss:  0.6898, valid_loss:  0.6914, grad_norm :0.0000, param_norm: 0.9124, expected_regret: -0.0108 expected_RLHFobj: 0.0238, reward_accuracy: 0.6100
+Iteration:  699, train_loss:  0.6897, valid_loss:  0.6924, grad_norm :0.0000, param_norm: 0.9052, expected_regret: -0.0084 expected_RLHFobj: 0.0255, reward_accuracy: 0.5600
+Iteration:  799, train_loss:  0.6895, valid_loss:  0.6918, grad_norm :0.0000, param_norm: 0.8983, expected_regret: -0.0119 expected_RLHFobj: 0.0251, reward_accuracy: 0.5800
+Iteration:  899, train_loss:  0.6891, valid_loss:  0.6904, grad_norm :0.0000, param_norm: 0.8902, expected_regret: -0.0128 expected_RLHFobj: 0.0199, reward_accuracy: 0.6200
+Iteration:  999, train_loss:  0.6891, valid_loss:  0.6911, grad_norm :0.0000, param_norm: 0.8837, expected_regret: -0.0111 expected_RLHFobj: 0.0207, reward_accuracy: 0.6300
+Logging to logs/exp2_notv/nsdpo_g0.7/2024-11-27-07-01-41/dpo_2025
+Seed:2025
+reset state dist uniform
+Dataset loaded: ./datasets/exp2.pkl
+opt_params: (100, 8) | train_data: (2000, 7) | valid_data: (10000, 7)
+Iteration:  0, train_loss:  1.5102, valid_loss:  1.3992, grad_norm :0.0000, param_norm: 1.7738, expected_regret: -0.2009 expected_RLHFobj: 1.0297, reward_accuracy: 0.5400
+Iteration:  99, train_loss:  0.7124, valid_loss:  0.7156, grad_norm :0.0000, param_norm: 1.4976, expected_regret: -0.0602 expected_RLHFobj: 0.1610, reward_accuracy: 0.6200
+Iteration:  199, train_loss:  0.7095, valid_loss:  0.7131, grad_norm :0.0000, param_norm: 1.4503, expected_regret: -0.0528 expected_RLHFobj: 0.1446, reward_accuracy: 0.6100
+Iteration:  299, train_loss:  0.7071, valid_loss:  0.7082, grad_norm :0.0000, param_norm: 1.4087, expected_regret: -0.0516 expected_RLHFobj: 0.1247, reward_accuracy: 0.5700
+Iteration:  399, train_loss:  0.7062, valid_loss:  0.7072, grad_norm :0.0000, param_norm: 1.3755, expected_regret: -0.0477 expected_RLHFobj: 0.1127, reward_accuracy: 0.5900
+Iteration:  499, train_loss:  0.7044, valid_loss:  0.7062, grad_norm :0.0000, param_norm: 1.3420, expected_regret: -0.0457 expected_RLHFobj: 0.1109, reward_accuracy: 0.5700
+Iteration:  599, train_loss:  0.7036, valid_loss:  0.7041, grad_norm :0.0000, param_norm: 1.3176, expected_regret: -0.0454 expected_RLHFobj: 0.1001, reward_accuracy: 0.6000
+Iteration:  699, train_loss:  0.7033, valid_loss:  0.7051, grad_norm :0.0000, param_norm: 1.2916, expected_regret: -0.0364 expected_RLHFobj: 0.0988, reward_accuracy: 0.5100
+Iteration:  799, train_loss:  0.7020, valid_loss:  0.7026, grad_norm :0.0000, param_norm: 1.2679, expected_regret: -0.0407 expected_RLHFobj: 0.0868, reward_accuracy: 0.6000
+Iteration:  899, train_loss:  0.7020, valid_loss:  0.7037, grad_norm :0.0000, param_norm: 1.2513, expected_regret: -0.0403 expected_RLHFobj: 0.0945, reward_accuracy: 0.5400
+Iteration:  999, train_loss:  0.7011, valid_loss:  0.7012, grad_norm :0.0000, param_norm: 1.2313, expected_regret: -0.0449 expected_RLHFobj: 0.0819, reward_accuracy: 0.6100

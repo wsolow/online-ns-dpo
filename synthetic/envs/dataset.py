@@ -113,7 +113,6 @@ def create_offline_data(
                     opt_agent,
                     states_i,
                     actions_i,
-                    mode=mode_reward
                 )
                 
                 actions_i = apply_preference(
@@ -217,7 +216,6 @@ def create_offline_data(
                 opt_agent,
                 states,
                 actions,
-                mode=mode_reward
             )
             actions = apply_preference(
                 preference,

@@ -104,7 +104,7 @@ def draw_results_from_df(
 
     allvalues = np.stack([means[k] for k in means])
 
-    if target_y == "expected_regret":
+    '''if target_y == "expected_regret":
         ylim_upper = 0.6
         ymin = -0.3
     elif target_y == "expected_obj":
@@ -115,9 +115,9 @@ def draw_results_from_df(
         ymin = 0.7
     else:
         ylim_upper = allvalues.max() * 1.05
-        ymin = min(allvalues.min(), 0.)
+        ymin = min(allvalues.min(), 0.)'''
 
-    plt.ylim(ymin, ylim_upper)
+    #plt.ylim(ymin, ylim_upper)
     plt.xlabel(xlabel, fontsize=fontsize_axes)
     plt.ylabel(ylabel, fontsize=fontsize_axes)
 
@@ -131,14 +131,16 @@ def draw_results_from_df(
     crb = ColorRevolver(colorset="B")
     crr = ColorRevolver(colorset="R")
     for k in names:
+        '''if "nsdpo" in k or "swdpo" in k or "sigmoid" in k:
+            continue'''
         if "nsdpo" in k:
             color = crb.get_color()
-        elif "sw_dpo" in k:
+        elif "swdpo" in k:
             color = crg.get_color()
-        elif "vanilla_dpo" in k:
+        elif "dpo" in k:
             color = crr.get_color()
-        else:
-            color = cr.get_color()
+        elif "sigmoid" in k:
+            color = crg.get_color()
         plt.plot(
             steps[k],
             means[k],
@@ -164,7 +166,7 @@ def draw_results_from_df(
     plt.yticks(fontsize=fontsize_ticks)
 
     # legends = plt.legend(loc="upper right", fontsize=fontsize_legs)
-    legends = plt.legend(loc="upper right", fontsize=fontsize_legs, ncols=2)
+    legends = plt.legend(loc="lower right", fontsize=fontsize_legs, ncols=2)
     for line in legends.get_lines():
         line.set_linewidth(linewidth * 2)
     plt.savefig(path_fig, bbox_inches='tight')

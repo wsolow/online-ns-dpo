@@ -158,6 +158,9 @@ def calc_pseudo_regret(
         2 * rewards["optimal"].sum() - rewards["pref"].sum() - rewards["npref"].sum()
     ) / 2
 
-    regret_pref = rewards["optimal"].sum() - rewards["pref"].sum()
+    regret_avg = rewards["optimal"].sum() - rewards["pref"].sum()
+
+    regret_pref = np.maximum(0,rewards["pref"].sum() - rewards["npref"].sum())
     
+    regret_pref = 1 if rewards["pref"].sum() - rewards["npref"] < 0 else 0
     return regret_avg, regret_pref, rewards

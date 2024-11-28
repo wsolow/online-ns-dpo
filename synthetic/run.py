@@ -92,6 +92,14 @@ def run_multiple_seeds(args, config_name, config):
         name_save="../eval_group"
     )
 
+def eval_multiple_seeds(args, config_name, config):
+    log_dirs = create_log_dirs(args, config_name, config)
+    agg_dfs(
+        log_dirs.values(), 
+        name_read="eval_df",
+        name_save="../eval_group"
+    )
+
 def parse_args():
     
     def str2bool(v):
@@ -140,11 +148,13 @@ if __name__ == "__main__":
     args = parse_args()
     configs, config_names = prepare_config(args)
 
-    np.set_printoptions(precision=3, suppress=True)
-    for idx_config in range(len(configs)):
-        config = configs[idx_config]
-        config_name = config_names[idx_config]
-        run_multiple_seeds(args, config_name, config)
+    run = True
+    if run:
+        np.set_printoptions(precision=3, suppress=True)
+        for idx_config in range(len(configs)):
+            config = configs[idx_config]
+            config_name = config_names[idx_config]
+            run_multiple_seeds(args, config_name, config)
 
     if args.project is not None:
         paths_agg = get_project_paths(args, config_names)
